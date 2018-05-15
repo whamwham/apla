@@ -1,0 +1,167 @@
+{
+	"LANGUAGE": "English",
+	"TITLE": "Apla - Public blockchain platform for building digital ecosystems",
+	"GETSTARTED": "GET STARTED",
+	"MENU": {
+		"ABOUT": "About",
+		"CASES": "Cases",
+		"BLOG": "BBR Blog"
+	},
+	"NEWSLETTER": {
+		"TITLE": "Get our newsletter",
+		"TEXT": "Get exclusive content delivered right into your inbox.",
+		"BUTTON": "SUBSCRIBE",
+		"SUBSCRIBE": {
+			"PLACEHOLDER": "E-mail",
+			"REQUIRED": "E-mail is required.",
+			"INCORRECT": "Incorrect e-mail address!",
+			"DUBLICATE": "You are already subscribed to newsletter!",
+			"READY": "Thank you!"
+		}
+	},
+	"FOOTER": {
+		"COPYRIGHT": "Apla, All Rights Reserved."
+	},
+	"MAIN": {
+		"SHOWREEL": {
+			"TITLE": "We are Apla",
+			"TEXT": "A tech company that uses distributed ledger technology to help organizations work faster, safer and with greater impact."
+		},
+		"BLOCKCHAIN": {
+			"TITLE": "Blockchain is a technology of efficiency",
+			"1": {
+				"TITLE": "Secure your data",
+				"TEXT": "Complex cryptography keeps data safe. Entries are replicated and stored on several servers. Information cannot be lost and cannot be falsified."
+			},
+			"2": {
+				"TITLE": "Reduce maintenance costs",
+				"TEXT": "Traditional document transfers and circulation has come to its end, and out goes all of the related financial and time expenditure with it. All operations are executed instantaneously, transparently and automatically."
+			},
+			"3": {
+				"TITLE": "Embrace innovation",
+				"TEXT": "A well-selected and implemented set of blockchain solutions naturally lifts an organization to a new level of development, with additional competitive advantage."
+			}
+		},
+		"CLIENTS": {
+			"TITLE": "Clients"
+		},
+		"FULLSERVICE": {
+			"TITLE": "Get the most out of blockchain",
+			"TEXT": "We collaborate with clients to identify areas of growth, match business processes with technology features, carefully select use cases for digital transformation, educate client teams, execute blockchain solutions and provide proactive support:",
+			"1": {
+				"TITLE": "Сonsultancy",
+				"TEXT": "Helping you define potential areas which can be optimized"
+			},
+			"2": {
+				"TITLE": "Research & Development",
+				"TEXT": "Matching your needs with the right technology stack"
+			},
+			"3": {
+				"TITLE": "Hackathons",
+				"TEXT": "Validating initial ideas"
+			},
+			"4": {
+				"TITLE": "Development",
+				"TEXT": "Creating a customized, user-friendly blockchain solution for client needs"
+			},
+			"5": {
+				"TITLE": "Training",
+				"TEXT": "Providing the client’s team with in-depth understanding of the solution"
+			},
+			"6": {
+				"TITLE": "Support",
+				"TEXT": "Maintaining a healthy blockchain ecosystem, coupled with constant R&D"
+			}
+		},
+		"APLAFOR": {
+			"SUBHEAD": "Apla",
+			"1": {
+				"TITLE": "For Government",
+				"TEXT": "Government services of the future will be digital. e-Government on the blockchain increases a country’s Foreign Direct Investment rating, leading to a rise in citizens’ feeling of wellbeing."
+			},
+			"2": {
+				"TITLE": "For Business",
+				"TEXT": "In competitive markets with complex business processes, the winner is the one who is able to inspire trust through transparency amongst their partners. Blockchain does exactly that by optimizing processes within the company: cutting out middlemen; increasing operational speed throughout; and having a positive effect on EBITDA."
+			}
+		},
+		"ADVANTAGE": {
+			"TITLE": "Technological advantage at your own service - Apla blockchain platform<sup>TM</sup>. It’s secure, scalable and easy to use",
+			"1": {
+				"TITLE": "Cybersecurity on a new level",
+				"TEXT": "Technological security of the highest spec."
+			},
+			"2": {
+				"TITLE": "Flexible access rights",
+				"TEXT": "This is Alpa’s key advantage: a multi-level system for access rights management to data, interfaces and smart contracts, allowing for full control of how the applications work."
+			},
+			"3": {
+				"TITLE": "Rapid application development",
+				"TEXT": "Where others require half a year to develop a working application, our system can be created and implemented within a couple of weeks."
+			},
+			"4": {
+				"TITLE": "Fast transactions",
+				"TEXT": "A maximum output capacity and potential boost to performance speed of up to 10,000 times, which corresponds to fintech and IT industry standards."
+			},
+			"5": {
+				"TITLE": "Super user-friendly",
+				"TEXT": "Apla’s software client differs from competitors’ in its intuitive interface for interaction with the platform. Getting to grips with it literally is a piece of cake! The clients’ needs are also adapted to depending on how different devices work, taking into account individual characteristics and requirements."
+			},
+			"6": {
+				"TITLE": "Your very own blockchain department",
+				"TEXT": "Apla offers not just a platform, but full operational support throughout. We offer an optimal solution and take care of the complete operation cycle: from research and development to implementation of innovative solutions and personnel training."
+			}
+		},
+		"ENTERPRISE": {
+			"TITLE": "Trusted enterprise partner",
+			"TEXT": "We are proud to work alongside systems integrators like Finesse and BearingPoint. Our partnership program establishes valuable and long-term relationships with partners. We help to educate clients, provide unique technology, develop demo-versions and conduct workshops. Blockchain LTV is our main KPI."
+		},
+		"BANNER": {
+			"TITLE": "Reach outstanding productivity",
+			"TEXT": "See how Apla could help to make you organization work more efficiently."
+		}
+	},
+	"VACANCIES": [
+		{
+			"COUNTRY": "Luxembourg",
+			"TOWN": "Luxembourg",
+			"VACANCY": [
+				{
+					"DEPARTMENT": "Marketing",
+					"TITLE": "Executive director",
+					"PREAMBLE": "At Apla we are waiting for a hero. A leader. The CaseFather.<br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.",
+					"DESCRIPTION": "<p>This is a serious vacancy, so let’s just start straight away.</p><p>At Apla we are waiting for a hero. A leader. The CaseFather.</p><p>We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.</p><p>Apla is a company with 4 offices in different parts of the world. And its global performance fully relies on the climate in each residence. That is why we need someone who would grab the flag and initiate action. So that the others could follow, inspired, with the hearts full love and sincerity, into their grand battle of changing the world.</p><h5>WE WOULD WANT TO UNSEE YOU IF YOU ARE</h5><p>Egoistic<br/>Enjoying the process, irrespective to the result<br/>Ice-souled<br/>Bureaucratic<br/>Sexist<br/>Racist</p><p>We know, some points are missing. We just don’t want to teach you bad words. We need you innocent.</p><h5>WE SEE YOU</h5><p>Ambitious<br/>Agile<br/>Willing to innovate<br/>Flexible<br/>Versatile<br/>Independent<br/>Team building<br/>Humane</p><h5>HOW WE WANT YOU TO SEE US</h5><p>Imagine our future world. There is more than just innovation to it. This world is new. Built by our team. Built by you.</p><p>What about you?</p><p>There you are, with the prime ministers and others. Agreeing to speak at the best international conferences. Sending a selfie to your kids so that they smile proudly at their smartphone’s screen. Though there is nothing new – they have already seen you in the latest Forbes and TechCrunch.</p><p>Sounds good? We can do this for you. If you do the following for us:</p><h5>HOW WE SEE YOUR WORK:</h5><ul> <li>Managing the development and delivery of effective, stable and secure IT services aligned to the company and groups business requirements</li><li>Being responsible for all aspects of IT service delivery including business and manufacturing applications, networks, telecommunications, databases, Development, systems integration and staff management,</li><li>Collaborating with the corporate organization in the delivery of global services, projects and infrastructure.</li><li>Oversees IT Infrastructure / Service delivery for the company within the region</li><li>Recruiting, hiring, and managing a high performing IT Team.</li><li>Anticipating and handling multiple priorities and complex issues involving external and internal priorities</li><li>Applying the technologies, methods and techniques to develop, and deliver, effective and high quality business information systems;</li><li>Understanding and cooperating with other team members from different cultures;</li></ul><h5>THANKS FOR READING!</h5><p>(No extra words. We hope you are a serious manager and would never want to waste your time)</p><p>P.S. Just wanted to say. JOIN US.</p>"
+				},
+				{
+					"DEPARTMENT": "Marketing",
+					"TITLE": "Executive director",
+					"PREAMBLE": "At Apla we are waiting for a hero. A leader. The CaseFather.<br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.",
+					"DESCRIPTION": "<p>This is a serious vacancy, so let’s just start straight away.</p><p>At Apla we are waiting for a hero. A leader. The CaseFather.</p><p>We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.</p><p>Apla is a company with 4 offices in different parts of the world. And its global performance fully relies on the climate in each residence. That is why we need someone who would grab the flag and initiate action. So that the others could follow, inspired, with the hearts full love and sincerity, into their grand battle of changing the world.</p><h5>WE WOULD WANT TO UNSEE YOU IF YOU ARE</h5><p>Egoistic<br/>Enjoying the process, irrespective to the result<br/>Ice-souled<br/>Bureaucratic<br/>Sexist<br/>Racist</p><p>We know, some points are missing. We just don’t want to teach you bad words. We need you innocent.</p><h5>WE SEE YOU</h5><p>Ambitious<br/>Agile<br/>Willing to innovate<br/>Flexible<br/>Versatile<br/>Independent<br/>Team building<br/>Humane</p><h5>HOW WE WANT YOU TO SEE US</h5><p>Imagine our future world. There is more than just innovation to it. This world is new. Built by our team. Built by you.</p><p>What about you?</p><p>There you are, with the prime ministers and others. Agreeing to speak at the best international conferences. Sending a selfie to your kids so that they smile proudly at their smartphone’s screen. Though there is nothing new – they have already seen you in the latest Forbes and TechCrunch.</p><p>Sounds good? We can do this for you. If you do the following for us:</p><h5>HOW WE SEE YOUR WORK:</h5><ul> <li>Managing the development and delivery of effective, stable and secure IT services aligned to the company and groups business requirements</li><li>Being responsible for all aspects of IT service delivery including business and manufacturing applications, networks, telecommunications, databases, Development, systems integration and staff management,</li><li>Collaborating with the corporate organization in the delivery of global services, projects and infrastructure.</li><li>Oversees IT Infrastructure / Service delivery for the company within the region</li><li>Recruiting, hiring, and managing a high performing IT Team.</li><li>Anticipating and handling multiple priorities and complex issues involving external and internal priorities</li><li>Applying the technologies, methods and techniques to develop, and deliver, effective and high quality business information systems;</li><li>Understanding and cooperating with other team members from different cultures;</li></ul><h5>THANKS FOR READING!</h5><p>(No extra words. We hope you are a serious manager and would never want to waste your time)</p><p>P.S. Just wanted to say. JOIN US.</p>"
+				}
+			]
+		},
+		{
+			"COUNTRY": "Russia",
+			"TOWN": "Moskow",
+			"VACANCY": [
+				{
+					"DEPARTMENT": "Marketing",
+					"TITLE": "Executive director",
+					"PREAMBLE": "At Apla we are waiting for a hero. A leader. The CaseFather.<br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.",
+					"DESCRIPTION": "<p>This is a serious vacancy, so let’s just start straight away.</p><p>At Apla we are waiting for a hero. A leader. The CaseFather.</p><p>We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.</p><p>Apla is a company with 4 offices in different parts of the world. And its global performance fully relies on the climate in each residence. That is why we need someone who would grab the flag and initiate action. So that the others could follow, inspired, with the hearts full love and sincerity, into their grand battle of changing the world.</p><h5>WE WOULD WANT TO UNSEE YOU IF YOU ARE</h5><p>Egoistic<br/>Enjoying the process, irrespective to the result<br/>Ice-souled<br/>Bureaucratic<br/>Sexist<br/>Racist</p><p>We know, some points are missing. We just don’t want to teach you bad words. We need you innocent.</p><h5>WE SEE YOU</h5><p>Ambitious<br/>Agile<br/>Willing to innovate<br/>Flexible<br/>Versatile<br/>Independent<br/>Team building<br/>Humane</p><h5>HOW WE WANT YOU TO SEE US</h5><p>Imagine our future world. There is more than just innovation to it. This world is new. Built by our team. Built by you.</p><p>What about you?</p><p>There you are, with the prime ministers and others. Agreeing to speak at the best international conferences. Sending a selfie to your kids so that they smile proudly at their smartphone’s screen. Though there is nothing new – they have already seen you in the latest Forbes and TechCrunch.</p><p>Sounds good? We can do this for you. If you do the following for us:</p><h5>HOW WE SEE YOUR WORK:</h5><ul> <li>Managing the development and delivery of effective, stable and secure IT services aligned to the company and groups business requirements</li><li>Being responsible for all aspects of IT service delivery including business and manufacturing applications, networks, telecommunications, databases, Development, systems integration and staff management,</li><li>Collaborating with the corporate organization in the delivery of global services, projects and infrastructure.</li><li>Oversees IT Infrastructure / Service delivery for the company within the region</li><li>Recruiting, hiring, and managing a high performing IT Team.</li><li>Anticipating and handling multiple priorities and complex issues involving external and internal priorities</li><li>Applying the technologies, methods and techniques to develop, and deliver, effective and high quality business information systems;</li><li>Understanding and cooperating with other team members from different cultures;</li></ul><h5>THANKS FOR READING!</h5><p>(No extra words. We hope you are a serious manager and would never want to waste your time)</p><p>P.S. Just wanted to say. JOIN US.</p>"
+				}
+			]
+		},
+		{
+			"COUNTRY": "UAE",
+			"TOWN": "Dubai",
+			"VACANCY": [
+				{
+					"DEPARTMENT": "Marketing",
+					"TITLE": "Executive director",
+					"PREAMBLE": "At Apla we are waiting for a hero. A leader. The CaseFather.<br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.",
+					"DESCRIPTION": "<p>This is a serious vacancy, so let’s just start straight away.</p><p>At Apla we are waiting for a hero. A leader. The CaseFather.</p><p>We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.</p><p>Apla is a company with 4 offices in different parts of the world. And its global performance fully relies on the climate in each residence. That is why we need someone who would grab the flag and initiate action. So that the others could follow, inspired, with the hearts full love and sincerity, into their grand battle of changing the world.</p><h5>WE WOULD WANT TO UNSEE YOU IF YOU ARE</h5><p>Egoistic<br/>Enjoying the process, irrespective to the result<br/>Ice-souled<br/>Bureaucratic<br/>Sexist<br/>Racist</p><p>We know, some points are missing. We just don’t want to teach you bad words. We need you innocent.</p><h5>WE SEE YOU</h5><p>Ambitious<br/>Agile<br/>Willing to innovate<br/>Flexible<br/>Versatile<br/>Independent<br/>Team building<br/>Humane</p><h5>HOW WE WANT YOU TO SEE US</h5><p>Imagine our future world. There is more than just innovation to it. This world is new. Built by our team. Built by you.</p><p>What about you?</p><p>There you are, with the prime ministers and others. Agreeing to speak at the best international conferences. Sending a selfie to your kids so that they smile proudly at their smartphone’s screen. Though there is nothing new – they have already seen you in the latest Forbes and TechCrunch.</p><p>Sounds good? We can do this for you. If you do the following for us:</p><h5>HOW WE SEE YOUR WORK:</h5><ul> <li>Managing the development and delivery of effective, stable and secure IT services aligned to the company and groups business requirements</li><li>Being responsible for all aspects of IT service delivery including business and manufacturing applications, networks, telecommunications, databases, Development, systems integration and staff management,</li><li>Collaborating with the corporate organization in the delivery of global services, projects and infrastructure.</li><li>Oversees IT Infrastructure / Service delivery for the company within the region</li><li>Recruiting, hiring, and managing a high performing IT Team.</li><li>Anticipating and handling multiple priorities and complex issues involving external and internal priorities</li><li>Applying the technologies, methods and techniques to develop, and deliver, effective and high quality business information systems;</li><li>Understanding and cooperating with other team members from different cultures;</li></ul><h5>THANKS FOR READING!</h5><p>(No extra words. We hope you are a serious manager and would never want to waste your time)</p><p>P.S. Just wanted to say. JOIN US.</p>"
+				}
+			]
+		}
+	]
+}

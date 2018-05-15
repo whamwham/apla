@@ -1,0 +1,18 @@
+<a class="logo" routerLink="/" (click)="isActive = false"></a>
+<section>
+	<nav>
+		<a routerLink="/about" (click)="isActive = false">{{ 'MENU.ABOUT' | translate }}</a>
+		<a routerLink="/cases" (click)="isActive = false">{{ 'MENU.CASES' | translate }}</a>
+		<a href="https://blog.apla.io/" target="_blank">{{ 'MENU.BLOG' | translate }}</a>
+	</nav>
+	<button type="button" class="btn">{{ 'GETSTARTED' | translate }}</button>
+	<div class="language">
+		<button mat-icon-button [matMenuTriggerFor]="LanguageList" [ngClass]="MenuStatus() ? 'active' : ''">{{ 'LANGUAGE' | translate }}<span class="arrow arrow-down"><em></em></span></button>
+		<mat-menu #LanguageList="matMenu" overlapTrigger="false" xPosition="before" yPosition="below">
+			<button mat-menu-item class="pseudo" *ngFor="let lang of language[0]; let i = index" (click)="ChangeLanguage(lang)">{{ language[1][i] }}</button>
+		</mat-menu>
+	</div>
+</section>
+<div class="menu" (click)="ShowMenu()">
+	<div class="patty"></div>
+</div>

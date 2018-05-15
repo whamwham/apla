@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Apla</title>
+		<base href="/">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<app-root></app-root>
+		<div id="pre-bootstrap">
+			<script type="text/javascript">
+				document.addEventListener("appready", handleAppReady);
+
+				function handleAppReady(event) {
+					var preBootstrap = document.getElementById("pre-bootstrap");
+					
+					preBootstrap.className = "loaded";
+					
+					setTimeout(function removeLoadingScreen() {
+						preBootstrap.remove();
+					}, 300);
+				}
+			</script>
+
+			<style type="text/css">
+				body {
+					overflow-y: scroll;
+				}
+				#pre-bootstrap {
+					position: fixed;
+					left: 0px;
+					right: 0px;
+					top: 0px;
+					bottom: 0px;
+					background-color: #1C1A1A;
+					background-image: url(assets/apla.svg), url(assets/loader.svg);
+					background-repeat: no-repeat, no-repeat;
+					background-position: center center, center center;
+					background-size: 51px auto, 80px auto;
+					opacity: 1;
+					transition: opacity linear 300ms;
+					-webkit-transition: opacity linear 300ms;
+					z-index: 999999;
+				}
+				#pre-bootstrap.loaded {
+					opacity: 0;
+				}
+			</style>
+		</div>
+	</body>
+</html>

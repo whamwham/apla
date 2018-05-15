@@ -1,0 +1,59 @@
+<div class="screen-map" *ngIf="map">
+	<div class="container">
+		<h2>Our contacts</h2>
+		<agm-map 
+			[latitude]="lat"
+			[longitude]="lng"
+			[zoom]="zoom"
+			[styles]="styles"
+			[disableDefaultUI]="false"
+			[zoomControl]="false">
+
+			<agm-marker 
+				*ngFor="let m of markers; let i = index"
+				(markerClick)="clickedMarker(m.label, i)"
+				[latitude]="m.lat"
+				[longitude]="m.lng"
+				[iconUrl]="m.iconUrl"
+				[markerDraggable]="m.draggable">
+
+				<agm-info-window [maxWidth]="150">
+					<strong>{{ m.info }}</strong>
+				</agm-info-window>
+
+			</agm-marker>
+		</agm-map>
+	</div>
+</div>
+<div class="container">
+	<nav>
+		<a class="logo" routerLink="/"></a>
+		<p><small><a routerLink="/about">{{ 'MENU.ABOUT' | translate }}</a></small></p>
+		<p><small><a routerLink="/cases">{{ 'MENU.CASES' | translate }}</a></small></p>
+		<p><small><a href="https://blog.apla.io/" target="_blank">{{ 'MENU.BLOG' | translate }}</a></small></p>
+	</nav>
+	<section>
+		<article>
+			<h5>Dubai</h5>
+			<small>17 B Street, Al Quoz Industrial Area 3<br /><a href="tel:+97143235644">+971 4 323 5644</a><br /><a href="mailto:dubai@apla.io">dubai@apla.io</a></small>
+		</article>
+		<article>
+			<h5>Luxembourg</h5>
+			<small>14 Rue Erasme, 1468 Luxembourg<br /><a href="tel:+35220301741">+35 220 301 741</a><br /><a href="mailto:luxemburg@apla.io">luxemburg@apla.io</a></small>
+		</article>
+		<article>
+			<h5>Moscow</h5>
+			<small>Tverskaya 7.<br /><a href="tel:+79689794229">+7 968 979 4229</a><br /><a href="mailto:moscow@apla.io">moscow@apla.io</a></small>
+		</article>
+		<article>
+			<h5>Vizag</h5>
+			<small>FinTech Tower Vizag 2nd Floor,<br />Sunrise Incubation Hub,<br />Visakhapatnam<br /><a href="mailto:vizag@apla.io">vizag@apla.io</a></small>
+		</article>
+	</section>
+	<footer>
+		<div class="soc">
+			<a class="btn-icon btn-icon-black" href="{{ item.url }}" target="_blank" *ngFor="let item of links"><i class="fa {{ item.icon }}" aria-hidden="true"></i></a>
+		</div>
+		<small>&copy; {{ GetYear }} {{ 'FOOTER.COPYRIGHT' | translate }}</small>
+	</footer>
+</div>

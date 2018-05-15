@@ -1,0 +1,133 @@
+{
+	"LANGUAGE": "Русский",
+	"TITLE": "Apla – публичная блокчейн платформа для построения цифровых экосистем",
+	"GETSTARTED": "Начать Использование",
+	"MENU": {
+		"ABOUT": "О компании",
+		"CASES": "Кейсы",
+		"BLOG": "Блог"
+	},
+	"NEWSLETTER": {
+		"TITLE": "Get our newsletter",
+		"TEXT": "Get exclusive content delivered right into your inbox.",
+		"BUTTON": "Подписаться",
+		"SUBSCRIBE": {
+			"PLACEHOLDER": "E-mail",
+			"REQUIRED": "E-mail обязателен.",
+			"INCORRECT": "Неверный e-mail адрес!",
+			"DUBLICATE": "Вы уже подписаны на новости!",
+			"READY": "Спасибо!"
+		}
+	},
+	"FOOTER": {
+		"COPYRIGHT": "Apla, Все права защищены."
+	},
+	"MAIN": {
+		"SHOWREEL": {
+			"TITLE": "We are Apla",
+			"TEXT": "A tech company that uses distributed ledger technology to help organizations work faster, safer and with greater impact."
+		},
+		"BLOCKCHAIN": {
+			"TITLE": "Blockchain is a technology of efficiency",
+			"1": {
+				"TITLE": "Secure your data",
+				"TEXT": "Complex cryptography makes data safer. Moreоver, information is replicated on several servers so it cannot be falsified or lost."
+			},
+			"2": {
+				"TITLE": "Make business processes more productive",
+				"TEXT": "Automate outdated IT-workflow: reduce bureaucracy and optimize decision making efficiency. In blockchain all operations are executed instantaneously and transparently."
+			},
+			"3": {
+				"TITLE": "Embrace innovation",
+				"TEXT": "Correct application and implementation of blockchain naturally lifts an organization to a new level - it fosters increased trust amongst partners and users."
+			}
+		},
+		"CLIENTS": {
+			"TITLE": "Clients"
+		},
+		"FULLSERVICE": {
+			"TITLE": "Get the most of blockchain",
+			"TEXT": "We collaborate with clients to identify areas of growth, match business processes with technology features, carefully select use cases for digital transformation, educate clients’ teams, execute blockchain solutions and provide proactive support:",
+			"1": {
+				"TITLE": "Сonsult",
+				"TEXT": "Help organizations define practical use of blockchain"
+			},
+			"2": {
+				"TITLE": "Analyze",
+				"TEXT": "Match business needs with the right technology solution"
+			},
+			"3": {
+				"TITLE": "Prototype",
+				"TEXT": "Fast idea validation with a working demo"
+			},
+			"4": {
+				"TITLE": "Develop",
+				"TEXT": "Step by step implementation into existing IT systems"
+			},
+			"5": {
+				"TITLE": "Educate",
+				"TEXT": "Coach management and technical specialists"
+			},
+			"6": {
+				"TITLE": "Support",
+				"TEXT": "Maintain a healthy blockchain ecosystem"
+			}
+		},
+		"APLAFOR": {
+			"SUBHEAD": "Apla для",
+			"1": {
+				"TITLE": "Правительства",
+				"TEXT": "Practical use of blockchain impact on Foreign Direct Investment and Happiness Index ratings, raising citizens’ wellbeing."
+			},
+			"2": {
+				"TITLE": "Бизнеса",
+				"TEXT": "Blockchain makes businesses work more productively: significantly impacting on EBITDA."
+			}
+		},
+		"ADVANTAGE": {
+			"TITLE": "Technological advantage at your own service - Apla blockchain platform. It’s secure, scalable and easy to use",
+			"1": {
+				"TITLE": "Security on a new level",
+				"TEXT": "Complex cryptography improve cybersecurity - protecting your data more safer."
+			},
+			"2": {
+				"TITLE": "Flexible access rights",
+				"TEXT": "Our platform offers a multi-level rights management system allowing for full blockchain control and human factor prevention."
+			},
+			"3": {
+				"TITLE": "Rapid application development",
+				"TEXT": "Where others require half a year to develop a working application, our platform is ready to go in a couple of weeks."
+			},
+			"4": {
+				"TITLE": "Fast operations",
+				"TEXT": "Maximum performance speed matches organisations’ requirements."
+			},
+			"5": {
+				"TITLE": "Usability",
+				"TEXT": "The Apla platform is easy to use: users interact with visual interfaces, instead of code."
+			},
+			"6": {
+				"TITLE": "Cross-platform",
+				"TEXT": "Compatible for any device. Use blockchain on your desktop or smartphone."
+			}
+		},
+		"ENTERPRISE": {
+			"TITLE": "Trusted enterprise partner",
+			"TEXT": "We are proud to be work alongside system integrators like Finesse and BearingPoint. Our partnership program establishes valuable and long-term relationships with partners. Win-win success is our main KPI."
+		},
+		"BANNER": {
+			"TITLE": "Reach outstanding productivity",
+			"TEXT": "See how Apla could help to make you organization work more efficiently."
+		}
+	},
+	"VACANCIES": [
+		{
+			"DEPARTMENT": "Маркетинг",
+			"COUNTRY": "Россия",
+			"TOWN": "Москва",
+			"TITLE": "Исполнительный директор",
+			"PREAMBLE": "At Apla we are waiting for a hero. A leader. The CaseFather.<br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.",
+			"DESCRIPTION": "This is a serious vacancy, so let’s just start straight away. <br /><br />At Apla we are waiting for a hero. A leader. The CaseFather. <br /><br />We do realise that your first word wasn’t ‘inspiration’ but it would be great if your professional life looks as if it actually was.<br /><br />Apla is a company with 4 offices in different parts of the world. And its global performance fully relies on the climate in each residence. That is why we need someone who would grab the flag and initiate action. So that the others could follow, inspired, with the hearts full love and sincerity, into their grand battle of changing the world. <br /><br />WE WOULD WANT TO UNSEE YOU IF YOU ARE<br /><br />Egoistic<br />Enjoying the process, irrespective to the result<br />Ice-souled <br />Bureaucratic <br />Sexist<br />Racist<br /><br />We know, some points are missing. We just don’t want to teach you bad words. We need you innocent. <br /><br /><br />WE SEE YOU<br /><br />Ambitious <br />Agile<br />Willing to innovate<br />Flexible<br />Versatile<br />Independent <br />Team building<br />Humane<br /><br />HOW WE WANT YOU TO SEE US<br /><br />Imagine our future world. There is more than just innovation to it. This world is new. Built by our team. Built by you.<br /><br />What about you?<br /><br />There you are, with the prime ministers and others. Agreeing to speak at the best international conferences. Sending a selfie to your kids so that they smile proudly at their smartphone’s screen. Though there is nothing new – they have already seen you in the latest Forbes and TechCrunch. <br /><br />Sounds good? We can do this for you. If you do the following for us:<br /><br /><br />HOW WE SEE YOUR WORK:<br /><ul><li>Managing the development and delivery of effective, stable and secure IT services aligned to the company and groups business requirements</li><li>Being responsible for all aspects of IT service delivery including business and manufacturing applications, networks, telecommunications, databases, Development, systems integration and staff management,</li><li>Collaborating with the corporate organization in the delivery of global services, projects and infrastructure.</li><li>Oversees IT Infrastructure / Service delivery for the company within the region</li><li>Recruiting, hiring, and managing a high performing IT Team.</li><li>Anticipating and handling multiple priorities and complex issues involving external and internal priorities</li><li>Applying the technologies, methods and techniques to develop, and deliver, effective and high quality business information systems;</li><li>Understanding and cooperating with other team members from different cultures;</li></ul><br /><br />THANKS FOR READING!<br /><br />(No extra words. We hope you are a serious manager and would never want to waste your time)<br /><br />P.S. Just wanted to say. JOIN US."
+		}
+	]
+}

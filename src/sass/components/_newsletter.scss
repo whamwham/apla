@@ -1,0 +1,68 @@
+&newsletter {
+	& > * {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		padding-top: 90px;
+		padding-bottom: 90px;
+		@include max($btablet) {
+			display: block;
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		& > div {
+			@include min($btablet) {
+				max-width: 395px;
+			}
+		}
+	}
+	h4 {
+		margin-bottom: 10px;
+		@include max($btablet) {
+			font-size: 30px;
+			line-height: 38px;
+		}
+	}
+	p {
+		@include max($btablet) {
+			margin-bottom: 15px;
+		}
+	}
+	form {
+		@include min($btablet) {
+			flex: 1;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-content: flex-start;
+			align-items: flex-start;
+			max-width: 405px;
+			margin-top: 30px;
+			& > div {
+				flex: 1;
+			}
+		}
+		@include max($btablet) {
+			text-align: right;
+			& > div {
+				display: block !important;
+				.form-control-feedback {
+					text-align: left;
+					padding-right: 130px;
+					& > * {
+						padding-right: 130px;
+					}
+				}
+			}
+		}
+		.btn {
+			margin-left: 17px;
+			margin-top: 18px;
+			@include max($btablet) {
+				margin-left: auto;
+				margin-right: -6px;
+				margin-top: 5px;
+			}
+		}
+	}
+}

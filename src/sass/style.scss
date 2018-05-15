@@ -1,0 +1,31 @@
+@import "variables";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~font-awesome/scss/font-awesome";
+@import "~swiper/dist/css/swiper.css";
+@import "mixins";
+@import "reset";
+@import "transition";
+@import "main";
+@import "utils";
+
+@import "elements/arrows";
+@import "elements/forms";
+@import "elements/buttons";
+@import "elements/mask";
+
+@import "components/content";
+
+app- {
+	@import "components/header";
+	@import "components/home";
+	@import "components/about";
+	@import "components/vacancies";
+	@import "components/government";
+	@import "components/business";
+	@import "components/cases";
+	@import "components/land-registry";
+	@import "components/supply-chain";
+	@import "components/vehicle-registry";
+	@import "components/newsletter";
+	@import "components/footer";
+}

@@ -1,0 +1,19 @@
+<div class="container">
+	<div>
+		<h4>{{ 'NEWSLETTER.TITLE' | translate }}</h4>
+		<p>{{ 'NEWSLETTER.TEXT' | translate }}</p>
+	</div>
+	<form [formGroup]="subscribeForm" novalidate>
+		<div class="form-group">
+			<small class="form-control-feedback" *ngIf="email.errors && email.touched" [@errorFeedbackAnimation]>
+				<span *ngIf="email.errors.required" [@errorFeedbackAnimation]>{{ 'NEWSLETTER.SUBSCRIBE.REQUIRED' | translate }}</span>
+				<span *ngIf="email.errors.pattern" [@errorFeedbackAnimation]>{{ 'NEWSLETTER.SUBSCRIBE.INCORRECT' | translate }}</span>
+			</small>
+			<small class="form-control-feedback" *ngIf="!subscribeForm.invalid && dublicate" [@errorFeedbackAnimation]>{{ 'NEWSLETTER.SUBSCRIBE.DUBLICATE' | translate }}</small>
+			<small class="form-control-feedback" *ngIf="ready" [@errorFeedbackAnimation]>{{ 'NEWSLETTER.SUBSCRIBE.READY' | translate }}</small>
+			<input class="form-control" placeholder="{{ 'NEWSLETTER.SUBSCRIBE.PLACEHOLDER' | translate }}" type="email" formControlName="email" required (ngModelChange)="dublicate = false">
+			<span class="form-control-focus"></span>
+		</div>
+		<button type="submit" class="btn" [disabled]="subscribeForm.invalid" (click)="subscribe()">{{ 'NEWSLETTER.BUTTON' | translate }}</button>
+	</form>
+</div>
