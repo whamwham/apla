@@ -51,13 +51,6 @@ export class FooterComponent implements OnInit {
 			info: 'Tverskaya 7',
 			iconUrl: '/assets/images/map-marker.svg',
 			draggable: false
-		},
-		{
-			lat: 17.7878397,
-			lng: 83.3714079,
-			info: 'FinTech Tower Vizag 2nd Floor, Sunrise Incubation Hub, Visakhapatnam',
-			iconUrl: '/assets/images/map-marker.svg',
-			draggable: false
 		}
 	]
 

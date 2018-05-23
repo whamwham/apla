@@ -23,7 +23,18 @@ export class HomeComponent implements OnInit {
 		navigation: true,
 		pagination: true
 	};
-	
+
+    public config2: SwiperConfigInterface = {
+        direction: 'horizontal',
+        slidesPerView: 4,
+        loop: true,
+        keyboard: false,
+        mousewheel: false,
+        scrollbar: false,
+        navigation: true,
+        pagination: true
+    };
+
 	@ViewChild(SwiperDirective) directiveRef: SwiperDirective;
 	
 	constructor(

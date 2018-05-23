@@ -171,6 +171,7 @@
 			}
 		}
 		.language {
+			display: none;
 			position: relative;
 			margin-left: 10px;
 			@include max($btablet) {

@@ -8,7 +8,7 @@
 		"BLOG": "Блог"
 	},
 	"NEWSLETTER": {
-		"TITLE": "Get our newsletter",
+		"TITLE": "Receive our newsletter",
 		"TEXT": "Get exclusive content delivered right into your inbox.",
 		"BUTTON": "Подписаться",
 		"SUBSCRIBE": {
@@ -85,7 +85,7 @@
 			}
 		},
 		"ADVANTAGE": {
-			"TITLE": "Technological advantage at your own service - Apla blockchain platform. It’s secure, scalable and easy to use",
+			"TITLE": "Technological advantage as a service: the Apla blockchain platform<sup>TM</sup>. It’s secure, scalable and easy to use",
 			"1": {
 				"TITLE": "Security on a new level",
 				"TEXT": "Complex cryptography improve cybersecurity - protecting your data more safer."

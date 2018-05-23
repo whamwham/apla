@@ -46,7 +46,8 @@ export class HeaderComponent implements OnInit {
         if (storedLang !== ""){
             userLang = storedLang;
         }
-		
+
+        userLang = "en";
 		translate.use(userLang);
 		
 		translate.onLangChange.subscribe(() => {

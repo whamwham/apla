@@ -28,8 +28,19 @@ export class AboutComponent implements OnInit {
 		navigation: false,
 		pagination: false
 	};
-	
-	@ViewChild(SwiperDirective) directiveRef: SwiperDirective;
+
+    public config2: SwiperConfigInterface = {
+        direction: 'horizontal',
+        slidesPerView: 4,
+        loop: true,
+        keyboard: false,
+        mousewheel: false,
+        scrollbar: false,
+        navigation: true,
+        pagination: true
+    };
+
+    @ViewChild(SwiperDirective) directiveRef: SwiperDirective;
 
 	constructor(
 		public dialog: MatDialog,
