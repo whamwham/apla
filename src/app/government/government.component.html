@@ -1,6 +1,5 @@
 <section>
-	<a class="btn-icon btn-icon-close btn-icon-black" routerLink="/"><em></em></a>
-	<div class="screen-main-popup">
+	<div class="screen-main">
 		<div class="container">
 			<h1>We have built a digital soсiety so can you</h1>
 			<h5>E-government on blockchain increase Foreign Direct Investment rating, raise citizen’s happiness index or just make government services work faster.</h5>
@@ -163,11 +162,6 @@
 			</a>
 		</div>
 	</div>
-	<div class="banner">
-		<div class="container">
-			<h1>{{ 'MAIN.BANNER.TITLE' | translate }}</h1>
-			<p>{{ 'MAIN.BANNER.TEXT' | translate }}</p>
-			<button type="button" class="btn">{{ 'GETSTARTED' | translate }}</button>
-		</div>
-	</div>
+	<app-banner></app-banner>
+	<app-newsletter></app-newsletter>
 </section>

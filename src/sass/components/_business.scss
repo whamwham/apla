@@ -1,38 +1,19 @@
 &business {
 	& > * {
-		position: absolute;
-		right: 0px;
-		top: 40px;
-		bottom: 40px;
-		width: calc(100% - 40px);
-		max-width: 100vw;
-		overflow-x: hidden;
-		overflow-y: auto;
-		box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.25);
 		background-color: $white;
 		@include max($btablet) {
 			top: 20px;
 			bottom: 20px;
-			width: calc(100% - 20px);
-		}
-		.btn-icon-close {
-			position: fixed;
-			right: 40px;
-			top: 80px;
-			z-index: 1;
-			@include max($btablet) {
-				right: 20px;
-				top: 40px;
-			}
+			width: 100%;
 		}
 		.screen {
 			&-main {
-				&-popup {
-					background-image: url(/assets/images/business/main-screen.jpg);
+				padding-top: 180px;
+				height: 100vh;
+				background-image: url(/assets/images/business/main-screen.jpg);
 					& * {
 						color: $white;
 					}
-				}
 			}
 			&-examples {
 				section {

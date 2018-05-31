@@ -1,11 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {trigger, style, animate, transition} from '@angular/animations';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
-    selector: 'app-newsletter',
-    templateUrl: './newsletter.component.html',
+    selector: 'app-popupform',
+    templateUrl: './popupform.component.html',
     animations: [
         trigger(
             'errorFeedbackAnimation', [
@@ -21,14 +22,15 @@ import {trigger, style, animate, transition} from '@angular/animations';
         )
     ],
 })
-export class NewsletterComponent implements OnInit {
-    subscribeForm: FormGroup;
+export class PopupformComponent implements OnInit {
+    popupForm: FormGroup;
     email: FormControl;
+    name: FormControl;
+    message: FormControl;
     ready = false;
     dublicate = false;
 
-    constructor(private http: HttpClient) {
-    }
+    constructor(private http: HttpClient, public dialogRef: MatDialogRef<PopupformComponent>, @Inject(MAT_DIALOG_DATA) public data: any ) {}
 
     ngOnInit() {
         this.createFormControls();
@@ -40,21 +42,31 @@ export class NewsletterComponent implements OnInit {
             Validators.required,
             Validators.pattern('[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}')
         ]);
+        this.name = new FormControl('', [
+            Validators.required
+        ]);
+        this.message = new FormControl('', [
+            Validators.required
+        ]);
     }
 
     createForm() {
-        this.subscribeForm = new FormGroup({
+        this.popupForm = new FormGroup({
             email: this.email,
+            name: this.name,
+            message: this.message,
         });
     }
 
     subscribe() {
-        let headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-        let url = 'https://apla.io/subscribe';
-        let data = {
-            email: this.email.value
+        const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        const url = 'https://apla.io/getstarted';
+        const data = {
+            email: this.email.value,
+            name: this.name.value,
+            message: this.message.value,
         };
-        let options = {
+        const options = {
             headers: headers,
             responseType: 'text' as 'text'
         };
@@ -63,7 +75,7 @@ export class NewsletterComponent implements OnInit {
             .subscribe(response => {
                 if (response === 'OK') {
                     this.ready = true;
-                    this.subscribeForm.reset();
+                    this.popupForm.reset();
                 } else if (response === 'DUP') {
                     this.dublicate = true;
                 }

@@ -5,10 +5,13 @@
 	"MENU": {
 		"ABOUT": "О компании",
 		"CASES": "Кейсы",
+		"FORBUSINESS": "Для бизнеса",
+		"FORGOVERNMENT": "Для правительства",
 		"BLOG": "Блог"
 	},
 	"NEWSLETTER": {
 		"TITLE": "Receive our newsletter",
+		"TITLEALT": "Want to see more cases?",
 		"TEXT": "Get exclusive content delivered right into your inbox.",
 		"BUTTON": "Подписаться",
 		"SUBSCRIBE": {
@@ -17,6 +20,24 @@
 			"INCORRECT": "Неверный e-mail адрес!",
 			"DUBLICATE": "Вы уже подписаны на новости!",
 			"READY": "Спасибо!"
+		}
+	},
+	"POPUPFORM": {
+		"TITLE": "We will respond within 1 business day",
+		"BUTTON": "Отправить",
+		"READY": "Thank you!",
+		"NAME": {
+			"PLACEHOLDER": "Your name *",
+			"REQUIRED": "Name is required."
+		},
+		"MESSAGE": {
+			"PLACEHOLDER": "Your message *",
+			"REQUIRED": "E-mail is required."
+		},
+		"EMAIL": {
+			"PLACEHOLDER": "Your email *",
+			"REQUIRED": "Email is required.",
+			"INCORRECT": "Incorrect email address!"
 		}
 	},
 	"FOOTER": {

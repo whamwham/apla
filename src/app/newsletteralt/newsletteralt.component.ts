@@ -4,8 +4,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {trigger, style, animate, transition} from '@angular/animations';
 
 @Component({
-    selector: 'app-newsletter',
-    templateUrl: './newsletter.component.html',
+    selector: 'app-newsletter-alt',
+    templateUrl: './newsletteralt.component.html',
     animations: [
         trigger(
             'errorFeedbackAnimation', [
@@ -21,7 +21,7 @@ import {trigger, style, animate, transition} from '@angular/animations';
         )
     ],
 })
-export class NewsletterComponent implements OnInit {
+export class NewsletterAltComponent implements OnInit {
     subscribeForm: FormGroup;
     email: FormControl;
     ready = false;

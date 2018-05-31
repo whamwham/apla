@@ -11,12 +11,9 @@ import { GovernmentComponent } 		from './government/government.component';
 import { BusinessComponent } 		from './business/business.component';
 
 const routes: Routes = [
-	{ path: '', component: HomeComponent,
-	 	children: [
-			{ path: 'government', component: GovernmentComponent },
-			{ path: 'business', component: BusinessComponent }
-		]
-	},
+    { path: 'government', component: GovernmentComponent },
+    { path: 'business', component: BusinessComponent },
+    { path: '', component: HomeComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'cases',
 		children: [

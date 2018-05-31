@@ -1,6 +1,5 @@
 <section>
-	<a class="btn-icon btn-icon-close btn-icon-black" routerLink="/"><em></em></a>
-	<div class="screen-main-popup">
+	<div class="screen-main">
 		<div class="container">
 			<h1>Drive competitive advantage in the digital age</h1>
 			<h5>Digital transformation helps organization become more productive. Blockchain enable organizations to operate more secure, transparent and trust.</h5>
@@ -144,11 +143,6 @@
 			</a>
 		</div>
 	</div>
-	<div class="banner">
-		<div class="container">
-			<h1>{{ 'MAIN.BANNER.TITLE' | translate }}</h1>
-			<p>{{ 'MAIN.BANNER.TEXT' | translate }}</p>
-			<button type="button" class="btn">{{ 'GETSTARTED' | translate }}</button>
-		</div>
-	</div>
+	<app-banner></app-banner>
+	<app-newsletter></app-newsletter>
 </section>

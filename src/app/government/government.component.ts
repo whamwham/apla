@@ -1,21 +1,22 @@
-import { Component, OnInit, OnDestroy } 	from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 
-import { slideInOutAnimation } 				from '../_animations/slide-in-out.animation';
+import {fadeInAnimation} from '../_animations/fade-in.animation';
 
 @Component({
-	selector: 'app-government',
-	templateUrl: './government.component.html',
-	animations: [slideInOutAnimation],
-	host: { '[@slideInOutAnimation]': '' }
+    selector: 'app-government',
+    templateUrl: './government.component.html',
+    animations: [fadeInAnimation],
+    host: {'[@fadeInAnimation]': ''}
 })
 export class GovernmentComponent implements OnInit, OnDestroy {
-	constructor() { }
+    constructor() {
+    }
 
-	ngOnInit() {
-		document.body.classList.add("popup-show");
-	}
-	
-	ngOnDestroy() {
-		document.body.classList.remove("popup-show");
-	}
+    ngOnInit() {
+        //document.body.classList.add("popup-show");
+    }
+
+    ngOnDestroy() {
+        //document.body.classList.remove("popup-show");
+    }
 }

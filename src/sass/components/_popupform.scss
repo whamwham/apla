@@ -1,0 +1,18 @@
+.popup-form {
+		padding: 40px;
+		max-width: 500px;
+		@include max($btablet) {
+		}
+		.head {
+			margin-bottom: 20px;
+		}
+
+		.form-group {
+			display: block;
+			padding-top: 10px;
+			margin-bottom: 20px;
+		}
+		.btn {
+			margin-top: 40px;
+		}
+}
