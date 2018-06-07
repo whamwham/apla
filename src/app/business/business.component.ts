@@ -1,21 +1,28 @@
-import { Component, OnInit, OnDestroy } 	from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 
-import { fadeInAnimation } 									from '../_animations/fade-in.animation';
+import {fadeInAnimation} from '../_animations/fade-in.animation';
+import {PopupformComponent} from '../popupform/popupform.component';
+import {MatDialog} from '@angular/material';
 
 @Component({
-	selector: 'app-business',
-	templateUrl: './business.component.html',
-	animations: [fadeInAnimation],
-	host: { '[@fadeInAnimation]': '' }
+    selector: 'app-business',
+    templateUrl: './business.component.html',
+    animations: [fadeInAnimation],
+    host: {'[@fadeInAnimation]': ''}
 })
 export class BusinessComponent implements OnInit {
-	constructor() { }
+    constructor(public dialog: MatDialog) {
+    }
 
-	ngOnInit() {
-		//document.body.classList.add("popup-show");
-	}
-	
-	ngOnDestroy() {
-		//document.body.classList.remove("popup-show");
-	}
+    ngOnInit() {
+    }
+
+    openDialog(): void {
+        const dialogRef = this.dialog.open(PopupformComponent, {});
+
+        dialogRef.afterClosed().subscribe(result => {
+            console.log('The dialog was closed');
+        });
+    }
+
 }

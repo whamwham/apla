@@ -1,6 +1,6 @@
 <div class="screen-map" *ngIf="map">
 	<div class="container">
-		<h2>Our contacts</h2>
+		<h2>Contact us</h2>
 		<agm-map 
 			[latitude]="lat"
 			[longitude]="lng"
@@ -29,6 +29,8 @@
 	<nav>
 		<a class="logo" routerLink="/"></a>
 		<p><small><a routerLink="/about">{{ 'MENU.ABOUT' | translate }}</a></small></p>
+		<p><small><a routerLink="/government" (click)="isActive = false">{{ 'MENU.FORGOVERNMENT' | translate }}</a></small></p>
+		<p><small><a routerLink="/business" (click)="isActive = false">{{ 'MENU.FORBUSINESS' | translate }}</a></small></p>
 		<p><small><a routerLink="/cases">{{ 'MENU.CASES' | translate }}</a></small></p>
 		<p><small><a href="https://blog.apla.io/" target="_blank">{{ 'MENU.BLOG' | translate }}</a></small></p>
 	</nav>
@@ -39,7 +41,7 @@
 		</article>
 		<article>
 			<h5>Luxembourg</h5>
-			<small>14 Rue Erasme, 1468 Luxembourg<br /><a href="tel:+35220301741">+35 220 301 741</a><br /><a href="mailto:luxemburg@apla.io">luxemburg@apla.io</a></small>
+			<small>14 Rue Erasme, 1468 Luxembourg<br /><a href="tel:+35220301741">+35 220 301 741</a><br /><a href="mailto:luxembourg@apla.io">luxembourg@apla.io</a></small>
 		</article>
 		<article>
 			<h5>Moscow</h5>

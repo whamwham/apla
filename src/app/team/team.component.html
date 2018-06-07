@@ -1,0 +1,22 @@
+<section class="team-rotator">
+    <div class="swiper-container" [swiper]="config3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let item of team">
+                <article>
+                    <div class="thumb mask mask-black2">
+                        <img src="{{ item.IMG }}" alt=""/>
+                    </div>
+                    <h4 [innerHTML]="item.NAMED"></h4>
+                    <small>{{ item.POSITION }}</small>
+                    <div class="descr" title="{{ item.DESCR }}">{{ item.DESCR }}</div>
+                </article>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <button type="button" class="swiper-button-prev"><span class="arrow arrow-left-w arrow-lg"><em></em></span>
+        </button>
+        <button type="button" class="swiper-button-next"><span class="arrow arrow-right-w arrow-lg"><em></em></span>
+        </button>
+
+    </div>
+</section>

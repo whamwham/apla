@@ -35,6 +35,7 @@
 		}
 	}
 	&-mission {
+		//min-height: 100vh;
 		padding-top: 90px;
 		padding-bottom: 90px;
 		@include max($btablet) {
@@ -344,7 +345,7 @@
 						}
 					}
 				}
-				article {
+				article, a {
 					flex: 50%;
 					align-content: flex-start;
 					align-items: flex-start;
@@ -357,7 +358,7 @@
 					}
 				}
 			}
-			article {
+			article, a {
 				flex: 25%;
 				display: flex;
 				flex-flow: column nowrap;
@@ -367,6 +368,7 @@
 				padding-left: 10px;
 				padding-right: 10px;
 				margin-top: 80px;
+				text-decoration: none;
 				@include max($btablet) {
 					flex: 50%;
 					max-width: 50%;
@@ -1135,7 +1137,7 @@
 				display: block;
 			}
 			ul {
-				flex: 50%;
+				flex: 60%;
 				position: relative;
 				background-image: url(/assets/icons/brace.svg);
 				background-repeat: no-repeat;
@@ -1175,7 +1177,7 @@
 				}
 			}
 			article {
-				flex: 50%;
+				flex: 40%;
 				display: flex;
 				flex-flow: row nowrap;
 				justify-content: flex-start;

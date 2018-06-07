@@ -102,6 +102,25 @@
 					background-size: 25px 23px;
 				}
 			}
+			&-w {
+				&:before {
+					background-image: url(/assets/icons/arrow-left-hover.svg);
+				}
+				&:after {
+					background-image: url(/assets/icons/arrow-left-pressed.svg);
+				}
+				em {
+					&:before {
+						background-image: url(/assets/icons/arrow-left-white.svg);
+						background-size: 25px 23px;
+					}
+					&:after {
+						background-image: url(/assets/icons/arrow-left.svg);
+						background-size: 25px 23px;
+					}
+				}
+			}
+
 		}
 		&.arrow-right {
 			&:before {
@@ -120,6 +139,25 @@
 					background-size: 25px 23px;
 				}
 			}
+			&-w {
+				&:before {
+					background-image: url(/assets/icons/arrow-right-hover.svg);
+				}
+				&:after {
+					background-image: url(/assets/icons/arrow-right-pressed.svg);
+				}
+				em {
+					&:before {
+						background-image: url(/assets/icons/arrow-right-white.svg);
+						background-size: 25px 23px;
+					}
+					&:after {
+						background-image: url(/assets/icons/arrow-right.svg);
+						background-size: 25px 23px;
+					}
+				}
+			}
+
 		}
 	}
 	&-down {

@@ -1,6 +1,6 @@
 import {Component, OnInit, HostListener, Inject, ViewChild} from '@angular/core';
 import {Location} from '@angular/common';
-import {Router} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
 import {Title, DOCUMENT} from '@angular/platform-browser';
 import {TranslateService} from '@ngx-translate/core';
 import {MatMenuTrigger} from '@angular/material';
@@ -21,9 +21,13 @@ import {PopupformComponent} from '../popupform/popupform.component';
 })
 export class HeaderComponent implements OnInit {
     language = [];
-    isActive: boolean = false;
-    navIsFixed: boolean = false;
-    navIsWhite: boolean = false;
+    isActive = false;
+    navIsFixed = false;
+    navIsWhite = false;
+    private fragment: string;
+
+
+    @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
     constructor(public dialog: MatDialog,
                 private titleService: Title,
@@ -31,6 +35,7 @@ export class HeaderComponent implements OnInit {
                 public localSettings: LocalSettingsService,
                 private location: Location,
                 private router: Router,
+                private route: ActivatedRoute,
                 @Inject(DOCUMENT) private document: Document,
                 @Inject(WINDOW) private window: Window) {
         this.language = [
@@ -43,7 +48,7 @@ export class HeaderComponent implements OnInit {
         let userLang = translate.getBrowserLang();
         userLang = userLang.match(/en|ru/) ? userLang : 'en';
 
-        let storedLang: string = localSettings.getLanguage();
+        const storedLang: string = localSettings.getLanguage();
         if (storedLang !== '') {
             userLang = storedLang;
         }
@@ -60,21 +65,16 @@ export class HeaderComponent implements OnInit {
         router.events.subscribe((val) => {
             if (location.path() === '/cases') {
                 this.navIsWhite = true;
-            }
-            else if (location.path() === '/business') {
+            } else if (location.path() === '/business') {
                 this.navIsWhite = true;
             } else {
                 this.navIsWhite = false;
             }
         });
-    }
-
-
-    ngOnInit() {
 
     }
 
-    @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+    ngOnInit() {}
 
     MenuStatus() {
         return this.trigger.menuOpen;
@@ -82,7 +82,7 @@ export class HeaderComponent implements OnInit {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        let number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+        const number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
         if (number > 100) {
             this.navIsFixed = true;
         } else {

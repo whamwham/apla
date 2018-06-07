@@ -1,12 +1,12 @@
 [
 	{
 		"name": "facebook",
-		"url": "https://www.facebook.com/aplaproject/",
+		"url": "https://www.facebook.com/AplaBlockchain/",
 		"icon": "fa-facebook"
 	},
 	{
 		"name": "twitter",
-		"url": "https://twitter.com/@aplaproject",
+		"url": "https://twitter.com/AplaBlockchain",
 		"icon": "fa-twitter"
 	},
 	{	
@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "telegram",
-		"url": "http://telegram.me/eGaaS",
+		"url": "https://t.me/apla_project",
 		"icon": "fa-paper-plane"
 	},
 	{

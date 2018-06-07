@@ -35,6 +35,7 @@ import {LoadingService} from './_services/loading.service';
 import {DOMEvents} from './_services/dom-events.service';
 import {BannerComponent} from './banner/banner.component';
 import {NewsletterAltComponent} from './newsletteralt/newsletteralt.component';
+import { TeamComponent } from './team/team.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -52,6 +53,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         MatDialogModule,
         MatIconModule
     ],
+//    declarations: [TeamComponent],
 //    declarations: [BannerComponent]
 })
 export class MaterialModule {
@@ -68,6 +70,7 @@ export class MaterialModule {
         FooterComponent,
         NewsletterComponent,
         NewsletterAltComponent,
+        TeamComponent,
         PopupformComponent,
         BannerComponent,
         HomeComponent,

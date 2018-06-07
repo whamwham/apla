@@ -4,28 +4,6 @@
 		<h4>{{ 'MAIN.SHOWREEL.TEXT' | translate }}</h4>
 	</div>
 </div>
-<div class="screen-blockchain">
-	<div class="container">
-		<h2>{{ 'MAIN.BLOCKCHAIN.TITLE' | translate }}</h2>
-		<section>
-			<article>
-				<span></span>
-				<h4>{{ 'MAIN.BLOCKCHAIN.1.TITLE' | translate }}</h4>
-				<p>{{ 'MAIN.BLOCKCHAIN.1.TEXT' | translate }}</p>
-			</article>
-			<article>
-				<span></span>
-				<h4>{{ 'MAIN.BLOCKCHAIN.2.TITLE' | translate }}</h4>
-				<p>{{ 'MAIN.BLOCKCHAIN.2.TEXT' | translate }}</p>
-			</article>
-			<article>
-				<span></span>
-				<h4>{{ 'MAIN.BLOCKCHAIN.3.TITLE' | translate }}</h4>
-				<p>{{ 'MAIN.BLOCKCHAIN.3.TEXT' | translate }}</p>
-			</article>
-		</section>
-	</div>
-</div>
 <div class="screen-6">
 	<div class="container">
 		<h2 [innerHTML]="'MAIN.ADVANTAGE.TITLE' | translate"></h2>
@@ -65,43 +43,66 @@
 	</div>
 </div>
 
+<div class="screen-blockchain">
+	<div class="container">
+		<h2>{{ 'MAIN.BLOCKCHAIN.TITLE' | translate }}</h2>
+		<section>
+			<article>
+				<span></span>
+				<h4>{{ 'MAIN.BLOCKCHAIN.1.TITLE' | translate }}</h4>
+				<p>{{ 'MAIN.BLOCKCHAIN.1.TEXT' | translate }}</p>
+			</article>
+			<article>
+				<span></span>
+				<h4>{{ 'MAIN.BLOCKCHAIN.2.TITLE' | translate }}</h4>
+				<p>{{ 'MAIN.BLOCKCHAIN.2.TEXT' | translate }}</p>
+			</article>
+			<article>
+				<span></span>
+				<h4>{{ 'MAIN.BLOCKCHAIN.3.TITLE' | translate }}</h4>
+				<p>{{ 'MAIN.BLOCKCHAIN.3.TEXT' | translate }}</p>
+			</article>
+		</section>
+	</div>
+</div>
+
 <div class="screen-clients">
 	<div class="container">
 		<h2>{{ 'MAIN.CLIENTS.TITLE' | translate }}</h2>
 		<section>
 			<div>
 				<h3>Governments</h3>
-				<article class="top">
+				<a href="https://www.government.ae/" target="_blank" class="top">
 					<mat-icon svgIcon="flag-UAE"></mat-icon>
 					<h4>UAE</h4>
-				</article>
-				<article class="top">
+				</a>
+				<a href="https://www.india.gov.in/" target="_blank" class="top">
 					<mat-icon svgIcon="flag-India"></mat-icon>
 					<h4>India</h4>
-				</article>
-				<article class="top">
+				</a>
+				<a href="http://government.ru/" target="_blank" class="top">
 					<mat-icon svgIcon="flag-Russia"></mat-icon>
 					<h4>Russia</h4>
-				</article>
-				<article class="top">
+				</a>
+				<a class="top">
 					<mat-icon svgIcon="flag-Netherlands"></mat-icon>
 					<h4>Netherlands Antilles</h4>
-				</article>
+				</a>
 			</div>
 			<div>
 				<h3>Businesses</h3>
-				<article>
+				<a href="https://www.bearingpoint.com/" target="_blank">
 					<img src="/assets/images/clients/BrP_Logo_RGB_PS.png" alt=""/>
-				</article>
-				<article>
+				</a>
+				<a href="https://snapswap.eu/" target="_blank">
 					<img src="/assets/images/clients/EY-snapswap-logo.png" alt=""/>
-				</article>
-				<article>
+				</a>
+				<a href="https://www.grantthornton.com/" target="_blank">
 					<img src="/assets/images/clients/grant-thornton-logo.png" alt=""/>
-				</article>
-				<article>
+				</a>
+				<a href="http://finessedirect.com/" target="_blank">
 					<img src="/assets/images/clients/Finesse-LOGO-H-with-add1.png" alt=""/>
-				</article>
+				</a>
 			</div>
 		</section>
 	</div>
@@ -165,17 +166,17 @@
 		<a routerLink="cases/land-registry">
 			<h3>We developed a land registry system in India</h3>
 			<span class="btn">read the case</span>
-			<img src="/assets/images/img-01.jpg" alt=""/>
+			<img src="/assets/images/cases/land-registry-b.jpg" alt=""/>
 		</a>
 		<a routerLink="cases/vehicle-registry">
 			<h3>Improved vehicle e-registry</h3>
 			<span class="btn">read the case</span>
-			<img src="/assets/images/img-02.jpg" alt=""/>
+			<img src="/assets/images/cases/vehicle-registry-b.jpg" alt=""/>
 		</a>
 		<a routerLink="cases/supply-chain">
 			<h3>Refined supply<br />chain</h3>
 			<span class="btn">read the case</span>
-			<img src="/assets/images/img-03.jpg" alt=""/>
+			<img src="/assets/images/cases/supply-chain-b.jpg" alt=""/>
 		</a>
 	</div>
 </div>
@@ -183,6 +184,8 @@
 	<div class="container">
 		<h2>{{ 'MAIN.ENTERPRISE.TITLE' | translate }}</h2>
 		<p>{{ 'MAIN.ENTERPRISE.TEXT' | translate }}</p>
+		<button type="button" class="btn" (click)="openDialog()">Become a partner</button>
+
 	</div>
 </div>
 <div class="screen-9">
@@ -197,7 +200,7 @@
 					<div>
 						<h4>Niyi Ayoola-Daniels</h4>
 						<small>President<br/> International Institute for Petroleum, Energy Law and Policy, Nigeria</small>
-						<p>As a solution designed specifically for government, Apla offers unparalleled scalability and strategic implementation across different verticals. Identifying key government sectors and focusing on high-impact areas like education, Apla team brings to the table an understanding of economic opportunities that blockchain adoption can unlock globally.</p>
+						<p>As a solution designed specifically for government, Apla offers unparalleled scalability and strategic implementation across different verticals. Identifying key government sectors and focusing on high-impact areas like education, the Apla team brings to the table an understanding of economic opportunities that blockchain adoption can unlock globally.</p>
 					</div>
 				</article>
 				<article class="swiper-slide">
@@ -220,7 +223,7 @@
 <div class="screen-team">
 	<div class="container">
 		<h2>Top-management</h2>
-		<section>
+		<section style="display: none">
 			<article>
 				<div class="thumb mask mask-black">
 					<img src="/assets/images/team/team_1.jpg" alt=""/>
@@ -258,8 +261,10 @@
 				<p>Small team member description. Work xpierence and some interesting things which make user trust Apla.</p>
 			</article>
 		</section>
+		<app-team teamPointer="TOPMANAGMENT"></app-team>
+
 		<h2>Advisory board</h2>
-		<section>
+		<section style="display: none">
 			<article>
 				<div class="thumb mask mask-black">
 					<img src="/assets/images/team/team_1.jpg" alt=""/>
@@ -293,6 +298,7 @@
 				<p>Optimize infrastructure costs for your existing applications and datacenters while enabling cloud migration and streamlining operations for total cost savings of 50% or more.</p>
 			</article>
 		</section>
+		<app-team teamPointer="ADVISORS"></app-team>
 	</div>
 </div>
 <div class="screen-news">
@@ -300,17 +306,17 @@
 		<h2>Latest news</h2>
 		<section>
 			<article>
-				<a href="https://blog.apla.io/apla-to-hold-blockchain-hackathon-in-partnership-with-gazprom-and-others-1cb098570f7" target="_blank">
-					<img src="/assets/images/news/1.jpg" alt=""/>
-					<h4>Apla to hold blockchain hackathon in partnership with Gazprom and others<span class="arrow arrow-right"><em></em></span></h4>
-					<p>Apla is to hold the AplaBlockchainHack contest in Moscow over the weekend, welcoming blockchain aficionados to take part in a hackathon with total prize fund of 1.5 million RUB ($26,000) to be won.</p>
-				</a>
-			</article>
-			<article>
 				<a href="https://blog.apla.io/apla-takes-part-in-dubai-future-smart-cities-show-25a39e5367ab" target="_blank">
 					<img src="/assets/images/img-05.jpg" alt=""/>
 					<h4>Unlock the creativity of&nbsp;software developers<span class="arrow arrow-right"><em></em></span></h4>
 					<p>Unlock the creativity of software developers to deliver new apps and services to customers faster. Gain the freedom to build the right app with the right components and accelerate digital strategies.</p>
+				</a>
+			</article>
+			<article>
+				<a href="https://blog.apla.io/how-to-integrate-blockchain-into-work-processes-ff702df63829" target="_blank">
+					<img src="/assets/images/news/1.png" alt=""/>
+					<h4>How to Integrate Blockchain into Work Processes?<span class="arrow arrow-right"><em></em></span></h4>
+					<p>When embarking on this discovery phase, the first question to ask should be: “is blockchain needed at all?” This is, of course, assuming that the fundamental question of “what is a blockchain” is already understood.</p>
 				</a>
 			</article>
 		</section>
