@@ -12,6 +12,11 @@ import {AgmCoreModule} from '@agm/core';
 
 import {AppRoutingModule} from './app-routing.module';
 
+// import {VgCoreModule} from 'videogular2/core';
+// import {VgControlsModule} from 'videogular2/controls';
+// import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+// import {VgBufferingModule} from 'videogular2/buffering';
+
 import {AppComponent} from './app.component';
 
 import {HeaderComponent} from './header/header.component';
@@ -35,7 +40,9 @@ import {LoadingService} from './_services/loading.service';
 import {DOMEvents} from './_services/dom-events.service';
 import {BannerComponent} from './banner/banner.component';
 import {NewsletterAltComponent} from './newsletteralt/newsletteralt.component';
-import { TeamComponent } from './team/team.component';
+import {TeamComponent} from './team/team.component';
+import {VideoComponent} from './video/video.component';
+
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -53,6 +60,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         MatDialogModule,
         MatIconModule
     ],
+//    declarations: [VideoComponent],
 //    declarations: [TeamComponent],
 //    declarations: [BannerComponent]
 })
@@ -73,6 +81,7 @@ export class MaterialModule {
         TeamComponent,
         PopupformComponent,
         BannerComponent,
+        VideoComponent,
         HomeComponent,
         CasesComponent,
         LandRegistryComponent,
@@ -99,6 +108,12 @@ export class MaterialModule {
             }
         }),
         SwiperModule,
+
+        // VgCoreModule,
+        // VgControlsModule,
+        // VgOverlayPlayModule,
+        // VgBufferingModule,
+
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSoSxKFr6M-iL3RUm-PtHmA2zZTesjNKo'
         }),

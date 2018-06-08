@@ -65,6 +65,7 @@ export class TeamComponent implements OnInit {
             this.team = response
                 .map( function (member) {
                     if (!member.NAMED) { member.NAMED = member.NAME.replace( ' ', '<br/>' ); }
+                    if (!member.SHORT) { member.SHORT = member.DESCR.substring(0, 100 ); }
                     return member;
                 })
                 .filter(function (member) {

@@ -1705,3 +1705,27 @@
 		margin-left: -8px;
 	}
 }
+
+.video-section {
+	min-height: 550px;
+	background: $black;
+	padding-top: 75px;
+	padding-bottom: 75px;
+
+	& .video-wrapper {
+		width: 80%;
+		margin: 0 auto;
+
+		img, video {
+			width: 100%;
+		}
+	}
+
+	@include max($btablet) {
+		min-height: 465px;
+		padding-top: 70px;
+	}
+	.btn {
+		margin-left: -8px;
+	}
+}

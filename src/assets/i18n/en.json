@@ -263,22 +263,26 @@
 			"NAME": "Evgeni Agronic",
 			"POSITION": "Head of Google Marketing Solutions (Russia)",
 			"IMG": "/assets/images/team/nope.png",
+			"SHORT": "An outstanding IT professional with a passion for building new businesses.",
 			"DESCR": "An outstanding IT professional with passion for building new businesses. He brings a vast knowledge base to driving Apla’s organization performance to the top. At Google, Evgeni is responsible for sales, B2B Marketing, and customer experience for a wide range of clients. He has been leading sales teams and growing revenue in Africa, Israel, Turkey, and Middle East. Also Evgeni is a mentor at the start-up accelerator GTI Labs and MBA in Business Administration and Management."
 		},{
 			"NAME": "Konstantin Goldshtein",
 			"POSITION": "Senior System Analyst at Microsoft",
 			"IMG": "/assets/images/team/kg.png",
+			"SHORT": "Technology evangelist, business coach and consultant with vast experience in global IT industry.",
 			"DESCR": "Technology evangelist, business coach and consultant with more than 15 years of experience in IT industry of Israel, the USA and Europe. Developed and promoted products used by the companies from the Fortune 500 list. Created ISV — a program on acceleration of startups and developers. In the last two years, Konstantin focuses on examination and expansion of business developing cloud-based solutions."
 		},{
 			"NAME": "Ioannis (John) Karamitsos",
 			"NAMED": "Ioannis (John)<br>Karamitsos",
 			"POSITION": "Digital Transformation Technologist & Managing Consultant at Orange (UAE)",
 			"IMG": "/assets/images/team/ijk.png",
+			"SHORT": "A technology expert with over two decades experience in IT and over 30 technical papers published.",
 			"DESCR": "Ioannis is an expert in cybersecurity, cryptography, blockchain, smart contracts, SDN/DC, machine learning and internet of things. He is certified in security, cloud computing, data center, and IT governance, and has 23 years of experience in IT. Also, Ioannis was managing complicated smart cities projects in Europe and Middle East. During his career he built many products ranging from embedded low-level systems to complex systems for telecoms networks. Author of over 30 papers and technical reports, a member of IEEE since 1997."
 		},{
 			"NAME": "Chris Bruck",
 			"POSITION": "Chief Marketing Officer of eGaaS S.A., Luxembourg",
 			"IMG": "/assets/images/team/cb.png",
+			"SHORT": "An entrepreneur with 30 years experience marketing cutting edge technology worldwide.",
 			"DESCR": "An entrepreneur with 30 years experience marketing cutting edge technology worldwide. Co-founded the first European web portal Europe Online in 1994, received strategic, financial, marketing and operational experience in Europe, Japan, and the US for major players and startups. Improved the Rolex brand impact online 2000% (2005-2008). Founder of Bespeak fashion technology start-up, former CEO of “Ashes and Snow” concept art project with more than 10 million visitors to date. Completed Ph.D. and M.A. in Business and Commerce in Keio University, Tokyo, and JD at the University of Paris I., Panthéon-Sorbonne. Fluent in 5 languages including Japanese."
 		}
 	],
@@ -286,116 +290,143 @@
 		{
 			"NAME": "Oleg Strelenko",
 			"NAMED": "Oleg <br>Strelenko",
-			"POSITION": "Founder & Chief Executive Officer",
+			"POSITION": "Chief Executive Officer",
 			"IMG": "/assets/images/team/os.png",
-			"DESCR": "Web developer, entrepreneur, and blockchain visionary. Oleg has more than 10 years’ experience in developing his own businesses and managing IT teams. He created a decentralized electronic currency entirely on his own: DCoin, 80,000 lines of Go code with in-built crowdfunding and online arbitrage systems. Oleg is known throughout the Russian IT community as Dmitry Kharitonov."
+			"SHORT": "Blockchain visionary, strong believer and creator of Apla unique technology.",
+			"DESCR": "Blockchain visionary, strong believer and creator of Apla unique technology. Early adopter of blockchain, Oleg created his own decentralized electronic currency DCoin in 2011. As he completed 73,000 lines Go code and attracted investors, he realized future potential is much bigger. In 2016 Oleg launched eGaaS (electronic Government as a Service) and became one of the pioneers of ICO market. This work was crucial for Apla project and built a solid foundation for the current progress."
 		},{
 			"NAME": "Michael Aprossine",
 			"NAMED": "Michael <br>Aprossine",
-			"POSITION": "Chief Business Development Officer, Co-founder",
+			"POSITION": "Chief Business Development Officer",
 			"IMG": "/assets/images/team/ma.png",
-			"DESCR": "Michael is a blockchain evangelist and a serial entrepreneur with more than 20 years’ experience in IT. Extensive industry knowledge and the desire to shake things up compelled Michael to launch a number of online startups, from dotcoms, to the internet of things and blockchain. An expert in strategic planning and new business model incorporation, Michael is developing Apla partnership programs and attracting customers around the world. He holds an Executive MBA and is a bachelor of Social Science."
+			"SHORT": "Michael is a blockchain evangelist and a serial entrepreneur with more than 20 years’ experience in IT.",
+			"DESCR": "Michael is a blockchain evangelist and a serial entrepreneur with more than 20 years’ experience in IT. Extensive industry knowledge and the desire to shake things up compelled Michael to launch a number of online startups from dotcoms to the internet of things and blockchain. An expert in strategic planning and new business model incorporation, Michael is developing Apla partnership programs and attracting customers around the world. He holds an Executive MBA and is a bachelor of Social Science. Worked as a co-founder and CEO of USDC SlotLogic S.A.R.L., as a marketing director at Korston Group, as BDO at FTS Maconomy and Ciscom."
 		},{
 			"NAME": "Vitaly Bondar",
 			"NAMED": "Vitaly <br>Bondar",
 			"POSITION": "Chief Legal Officer",
 			"IMG": "/assets/images/team/vb.png",
-			"DESCR": "Vitaly is a certified Russian legal expert and CEO of the Luxembourg-based law firm, ChristmannSchmitt. He specializes in e-commerce and private international law. Over the past 15 years, he has held senior positions at large international law firms and industrial companies with a focus on cross-border mergers and acquisitions, and transaction structuring. Vitaly graduated from Kuban State University Faculty of Law in 1999, and later obtained a postgraduate diploma (L.L.M) in International Banking and Commercial Law in 2001 from Queen Mary University in London."
+			"SHORT": "Vitaly is an expert in legal regulation of blockchain, fintech and private international law.",
+			"DESCR": "Vitaly is an expert in legal regulation of blockchain, fintech and private international law. He is a Chief Legal Officer of Apla and a CEO of the Luxembourg-based law firm ChristmannSchmitt. Over the past 15 years, he has held senior positions at large international law firms and industrial companies with a focus on cross-border mergers and acquisitions, and transaction structuring. Vitaly holds an LL.M. (Legum Magister) degree in International Banking and Commercial Law after receiving advanced study at Queen Mary University in London."
 		},{
 			"NAME": "Muhammed Arafath",
 			"NAMED": "Muhammed <br>Arafath",
-			"POSITION": "Director of Business Development",
+			"POSITION": "Executive Director MENA",
 			"IMG": "/assets/images/team/mha.png",
-			"DESCR": "A graduate from Southern Cross University in Australia, Muhammed is a certified Blockchain business analyst, and has 10+ years of experience working with diverse verticals, industries and international markets. He is currently exploring the intersection between artificial intelligence, blockchains and the internet of things. He actively works with governmental and private organizations to help them adopt blockchain technology."
+			"SHORT": "An outstanding expert in blockchain implementation and keynote speaker on a global scale.",
+			"DESCR": "An outstanding expert in digital transformation, Apla’s Executive Director and key speaker on a global scale. As a speaker or chair, he often attends the events like Gartner Symposium/ITxpo, TRESCON and the World Blockchain Summit. A graduate from Southern Cross University (Australia), Muhammed is a certified Blockchain business analyst, and has 10+ years of experience working with diverse industries and international markets. Не is actively working with governmental and businesses to help them adopt blockchain. Advisor of the World Blockchain Foundation, former principal consultant at Finesse Global (Dubai), business analyst at Quosphere and UXL Consulting."
 		}
 	],
 	"TEAM": [
 		{
 			"NAME": "Alexander Boldachev",
 			"NAMED": "Alexander <br>Boldachev",
-			"POSITION": "Advisory Board Member",
+			"POSITION": "System Architect",
 			"IMG": "/assets/images/team/ab.png",
-			"DESCR": "Alexander is a philosopher, analyst, and member of the Association of Russian Futurologists. His primary areas of research are: global evolutionism, temporal ontology, philosophy of artificial intelligence, and futurology. Works on the creation of a subject-event approach to complex systems modeling. Alexander created the concept of Smart Laws, developed an ideology for smart contracts and a number of Apla’s apps and ecosystems. He is one of our key speakers."
+			"SHORT": "Alexander is a futurologist and a blockchain architect",
+			"DESCR": "Alexander is a philosopher, analyst, and member of the Association of Russian Futurologists. His primary areas of research are: global evolutionism, temporal ontology, philosophy of artificial intelligence, and futurology. Works on the creation of a subject-event approach to complex systems modeling. Alexander created the concept of Smart Laws, developed an ideology for smart contracts and a number of Apla’s dApps and digital ecosystems. He is one of our key speakers at European events like Future Tech (St. Petersburg), Blockchain Weekend and #Decenter Cryptoevent (Moscow), Blockchain Conference (Kiev)."
 		},{
-			"NAME": "Nick Syusko",
+			"NAME": "Nickolay Syusko",
 			"POSITION": "Head of Digital Transformation",
 			"IMG": "/assets/images/team/ns.png",
-			"DESCR": "Nick is a blockchain evangelist and a strong professional in business development, PR & marketing. At Apla he defines areas of growth, drives sales activities, as well as defining brand and marketing strategy. With a wealth of experience in strategy and new business development, Nick helps Apla to be at the forefront of tech innovation. He has a Master’s degree in Economics."
+			"SHORT": "Nick is a blockchain evangelist and a strong professional in business development, PR & marketing.",
+			"DESCR": "At Apla he defines areas of growth, drives sales activities, as well as defining brand and marketing strategy. With a wealth of experience in strategy and new business development for companies like Coca-Cola or Microsoft, Nick helps Apla to be at the forefront of tech innovation. Opinion leader on LinkedIn with 16K business network. Speaker at Future Cities Show ‘18 at Dubai. He has a Master’s degree in Economics."
 		},{
 			"NAME": "Dmitry Brovkin",
-			"POSITION": "Speaker, Blockchain Expert",
+			"POSITION": "Head of Developer Marketing",
 			"IMG": "/assets/images/team/db.png",
-			"DESCR": "Well-versed in both technical and business areas, Dmitry often represents Apla at international conferences, promoting the platform and training our partners in Europe and Asia. An entrepreneurial spirit combined with international business training and software development experience in the past makes Dmitry a valuable asset for the Apla team. He has two degrees: Project Management and English Language Interpreting."
+			"SHORT": "Technical and business expert responsible for implementing blockchain.",
+			"DESCR": "Well-versed in both technical and business areas, Dmitry often represents Apla at international conferences, promoting the platform and training our partners in Europe and Asia. An entrepreneurial spirit combined with international business training and software development experience in the past makes Dmitry a valuable asset for the Apla team. He has a degree in Project Management."
 		},{
 			"NAME": "Anna Nosova",
 			"POSITION": "Business Development Manager",
 			"IMG": "/assets/images/team/an.png",
+			"SHORT": "Project promotion expert with over 5 years’ international experience.",
 			"DESCR": "Thanks to Anna’s management talents, Apla participates constantly in conferences and events around the world, always staying proactive in SMM, email-marketing, reports and ad campaigns. Moreover, Anna analyses the market to stay in the loop of current trends. She holds a Master's degree in Psychology and has 5 years’ experience in the field of project promotion. Anna has cooperated with international volunteer organizations such as Peace Corp, Spare, and the Biomass Project."
 		},{
 			"NAME": "Igor Chertov",
 			"POSITION": "Lead Front End Developer",
 			"IMG": "",
+			"SHORT": "A gifted developer and blockchain enthusiast.",
 			"DESCR": "Igor is a gifted developer and blockchain enthusiast. Has a deep knowledge of the full cycle development of cross-platform, hybrid mobile applications for web and desktop environments, as well as in relational SQL and document-based data stores. Igor received a degree in Information Technology and has since acquired the title of Microsoft-Certified Solutions Developer (MCSD)."
 		},{
 			"NAME": "Yuriy Lomakin",
 			"POSITION": "Front End Developer, Tester",
 			"IMG": "",
+			"SHORT": "UX/UI developer, JavaScript, Angular and jQuery ninja, HTML5 and CSS guru.",
 			"DESCR": "Yuriy has over 15 years of development experience. A UX/UI developer, JavaScript, Angular and jQuery ninja, HTML5 and CSS guru: he has solid skills and is a highly efficient team member. Yuriy has previously worked for major news portals and top advertising agencies with a very intense and diversified workload."
 		},{
 			"NAME": "Alexey Krivonogov",
 			"POSITION": "Lead Back End Developer",
 			"IMG": "/assets/images/team/ak.png",
+			"SHORT": "25 years’ programming experience and developer of entire platform programming interface.",
 			"DESCR": "After 25 years of self-perfection in programming, Alexey created essential solutions that provide the basis for Apla’s main benefits: its high usability and rapid application development. He constructed the programming languages Simvolio and Protypo, and the entire platform programming interface. Alexey became a co-developer of Apla’s predecessor project, DCoin cryptocurrency. Has a degree in Mathematics and Applied Mathematics."
 		},{
 			"NAME": "Peter Farbey",
 			"POSITION": "Chief Data Storyteller",
 			"IMG": "/assets/images/team/pf.png",
+			"SHORT": "Blockchain marketing consultant and award-winning advertising specialist.",
 			"DESCR": "Peter is a blockchain marketing consultant and award-winning advertising specialist, prize-holder of Cannes Lions, D&AD, ADCR. Working in advertising, he has helped to develop communications for global brands like Visa, Coca-Cola, Shell and many more. At Apla, Peter helps spread awareness about our unique technology, combining essential creativity with high project management skills. A specialist in Political science and Government, with a Master’s degree in Communication Strategy/Brand Strategy at BBDO Wordshop."
 		},{
 			"NAME": "Roman Potekhin",
 			"POSITION": "Tech Lead",
 			"IMG": "",
+			"SHORT": "Experienced Python 2.x, Erlang, and Golang programmer and NoSQL and column-store database specialist.",
 			"DESCR": "Roman has over 10 years of experience as a Python 2.x, Erlang, and Golang programmer, and as a relational, NoSQL and column-store database specialist. He implemented several highload projects for major companies throughout the CIS. At Apla, Roman is developing the platform architecture, making technical decisions and solving major tech problems."
 		},{
 			"NAME": "Vasily Starovetskiy",
 			"POSITION": "Platform Applications Developer",
-			"IMG": "",
+			"IMG": "/assets/images/team/vs.png",
+			"SHORT": "Master of Delphi, C++, PL/SQL, Unity (C#), with experience working for energy giants.",
 			"DESCR": "Master of Delphi, C++, PL/SQL, Unity (C#). Vasily has a degree in Engineering and Security of Information Systems. Before Apla, he worked as a programmer for an energy giant and the leader of sustainable energy market of CIS countries."
 		},{
 			"NAME": "Pavel Fedorov",
 			"POSITION": "Head of PMO",
 			"IMG": "/assets/images/team/pvf.png",
+			"SHORT": "Leading development process manager as scrum master.",
 			"DESCR": "At Apla, Pavel is leading the platform development processes as Scrum master. He helps to manage and coordinate workflows of the company's departments, administer the work environment, corporate tools and integration. Pavel has been managing digital projects since 2014, and has a degree in Communication Engineering. A crucial moment of his career was Haute Future Fashion Academy in Milan, where he gained his first points in digital marketing."
 		},{
 			"NAME": "Dmitry Chertkov",
 			"POSITION": "Senior Backend Developer",
-			"IMG": "",
+			"IMG": "/assets/images/team/dch.png",
+			"SHORT": "Outstanding professional in  PHP, Node.js and Golang with over 12 years’ experience.",
 			"DESCR": "With more than 12 years of experience in programming, Dmitry is an outstanding professional in  PHP, Node.js and Golang. He developed digital content for a major Russian telecom businesses and has more than 5 years of experience in leading programmers team."
 		},{
 			"NAME": "Ivan Rozhkov",
 			"POSITION": "",
 			"IMG": "/assets/images/team/ir.png",
+			"SHORT": "",
 			"DESCR": ""
 		},{
 			"NAME": "Alexandra Khasirdzeva",
 			"POSITION": "Business Analyst",
 			"IMG": "",
+			"SHORT": "Expert business strategist for expansion and created a global startup accelerator program in the UAE.",
 			"DESCR": "A global citizen who lived in Moscow, Jordan, Dubai and LA working in startups. Developing content on innovation and emerging tech, Alexandra had a chance to interact with many industry leaders and visionaries. Later she succeeded in developing new business strategies for expansion, and created a global startup accelerator program in the UAE. Alexandra studied at the University of Edinburgh and the University of Southern California, with a BA in Economics."
 		},{
 			"NAME": "Mohammed Saleem",
-			"POSITION": "Product director",
+			"POSITION": "Executive Director",
 			"IMG": "",
+			"SHORT": "Entrepreneur, investor, go getter, ideator, effective negotiator and people manager.",
 			"DESCR": "Entrepreneur, investor, go getter, ideator, effective negotiator and people manager. His key skills lies is conceptualising business platforms that cover a myriad of latest technologies connecting businesses, governments, corporates, startups and investors across the world. Always focuses actively on identifying key investment opportunities. Mohammed is also a CEO of World Blockchain Summit and the leader of Trescon."
 		},{
 			"NAME": "Fouad Rathie",
 			"POSITION": "Fintech advisor",
 			"IMG": "",
-			"DESCR": ""
+			"SHORT": "Successful career spanning decades in banking and current President of the Luxembourg Arab Business Association.",
+			"DESCR": "After pursuing a credit career at Chase Manhattan Egypt, Credit Suisse, and Bank of America, Fouad emigrated to Luxembourg, founding the Ottoman Bank in Luxembourg (subsequently acquired by Garanti Bank). During his banking career, Mr. Rathle was also board member of the bankers’ association ABBL and its longest serving director, Chairman of the Banking Academy IFBL from 2004 until its sale to the chamber of Commerce of Luxembourg, founder and currently treasurer of the Russian Luxembourg Chamber, former president of Rotary Club Horizon, founder and President of Rotary Espoir micro-credit funds 2005-2011, and currently President of the Luxembourg Arab Business Association."
 		},{
 			"NAME": "Youssef Daoud",
 			"POSITION": "Social media manager",
 			"IMG": "",
+			"SHORT": "A strong IT professional with a Master's degree in Project Management in Innovation and Entrepreneurship from University of Nantes.",
 			"DESCR": "A strong IT professional with a Master's degree focused in Project Management in Innovation and Entrepreneurship from University of Nantes. Skilled in computer science and analytics, Youssef has a long history of working in the IT and services industry."
+		},{
+			"NAME": "Adam Yates",
+			"POSITION": "Content Lead",
+			"IMG": "/assets/images/team/ay.png",
+			"SHORT": "Adam is a content specialist with over 5 years experience in digital media.",
+			"DESCR": "Adam is a content specialist with over 5 years experience in digital media, working on a variety of projects in and around fintech. Adam has moved into the blockchain space, and is now helping Apla to put ideas across in a simple but effective manner. He holds a Master’s degree in IT & IP law."
 		}
 	]
 }
