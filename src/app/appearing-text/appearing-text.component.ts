@@ -26,7 +26,7 @@ const heightDiv = '110px',
             })),
             state('hide', style({
                 height: 0,
-                opacity: 0
+                opacity: 0,
                 transform: 'translateY(' + offset + ')',
                 transition: animTime + 'ms all ease-in'
             }))
