@@ -8,14 +8,15 @@ import {MatMenuModule, MatTabsModule, MatDialogModule, MatIconModule} from '@ang
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {SwiperModule, SWIPER_CONFIG, SwiperConfigInterface} from 'ngx-swiper-wrapper';
+
 import {AgmCoreModule} from '@agm/core';
 
 import {AppRoutingModule} from './app-routing.module';
 
-// import {VgCoreModule} from 'videogular2/core';
-// import {VgControlsModule} from 'videogular2/controls';
-// import {VgOverlayPlayModule} from 'videogular2/overlay-play';
-// import {VgBufferingModule} from 'videogular2/buffering';
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
 
 import {AppComponent} from './app.component';
 
@@ -42,6 +43,10 @@ import {BannerComponent} from './banner/banner.component';
 import {NewsletterAltComponent} from './newsletteralt/newsletteralt.component';
 import {TeamComponent} from './team/team.component';
 import {VideoComponent} from './video/video.component';
+import { MusicCopyrightComponent } from './cases/music-copyright/music-copyright.component';
+import { SurveyPollComponent } from './cases/survey-poll/survey-poll.component';
+import { FinancialSectorComponent } from './cases/financial-sector/financial-sector.component';
+import { BusinessLicensingComponent } from './cases/business-licensing/business-licensing.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -60,6 +65,10 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         MatDialogModule,
         MatIconModule
     ],
+//    declarations: [BusinessLicensingComponent],
+//    declarations: [FinancialSectorComponent],
+//    declarations: [SurveyPollComponent],
+//    declarations: [MusicCopyrightComponent],
 //    declarations: [VideoComponent],
 //    declarations: [TeamComponent],
 //    declarations: [BannerComponent]
@@ -87,6 +96,10 @@ export class MaterialModule {
         LandRegistryComponent,
         SupplyChainComponent,
         VehicleRegistryComponent,
+        MusicCopyrightComponent,
+        SurveyPollComponent,
+        FinancialSectorComponent,
+        BusinessLicensingComponent,
         AboutComponent,
         VacanciesComponent,
         GovernmentComponent,
@@ -109,10 +122,10 @@ export class MaterialModule {
         }),
         SwiperModule,
 
-        // VgCoreModule,
-        // VgControlsModule,
-        // VgOverlayPlayModule,
-        // VgBufferingModule,
+        VgCoreModule,
+        VgControlsModule,
+        VgOverlayPlayModule,
+        VgBufferingModule,
 
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSoSxKFr6M-iL3RUm-PtHmA2zZTesjNKo'

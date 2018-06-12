@@ -15,6 +15,7 @@
 
 @import "components/content";
 @import "components/popupform";
+@import "components/video";
 
 app- {
 	@import "components/header";
@@ -27,6 +28,10 @@ app- {
 	@import "components/land-registry";
 	@import "components/supply-chain";
 	@import "components/vehicle-registry";
+	@import "components/music-copyright";
+	@import "components/survey-poll";
+	@import "components/financial-sector";
+	@import "components/business-licensing";
 	@import "components/newsletter";
 	@import "components/footer";
 }

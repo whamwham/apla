@@ -74,7 +74,8 @@ export class HeaderComponent implements OnInit {
 
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+    }
 
     MenuStatus() {
         return this.trigger.menuOpen;

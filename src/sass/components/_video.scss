@@ -1,0 +1,9 @@
+.vg-overlay-play {
+	.vg-icon-play_arrow {
+		background: #1C1A1A url(/assets/icons/icon-wv.svg) center center no-repeat;
+		background-size: 150px auto;
+		&:before {
+			content: "";
+		}
+	}
+}

@@ -8,6 +8,11 @@
 		@include max($btablet) {
 			padding-top: 110px;
 		}
+		@media (max-height: 650px) {
+			@media (min-width: 900px) {
+				padding-top: 110px;
+			}
+		}
 		h1 {
 			margin-bottom: 22px;
 			@include max($btablet) {
@@ -1014,7 +1019,7 @@
 					padding: 30px;
 					padding-bottom: 45px;
 					margin-right: 25px;
-					margin-top: -275px;
+					margin-top: -30vh;
 					@include max($btablet) {
 						max-width: none;
 						margin-right: 0px;
