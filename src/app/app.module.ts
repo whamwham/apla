@@ -9,6 +9,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {SwiperModule, SWIPER_CONFIG, SwiperConfigInterface} from 'ngx-swiper-wrapper';
 import {AgmCoreModule} from '@agm/core';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -31,6 +32,7 @@ import {SupplyChainComponent} from './cases/supply-chain/supply-chain.component'
 import {VehicleRegistryComponent} from './cases/vehicle-registry/vehicle-registry.component';
 import {AboutComponent} from './about/about.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
+import {CareerComponent} from './career/career.component';
 import {GovernmentComponent} from './government/government.component';
 import {BusinessComponent} from './business/business.component';
 
@@ -42,6 +44,7 @@ import {BannerComponent} from './banner/banner.component';
 import {NewsletterAltComponent} from './newsletteralt/newsletteralt.component';
 import {TeamComponent} from './team/team.component';
 import {VideoComponent} from './video/video.component';
+import {AppearingTextComponent} from './appearing-text/appearing-text.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -89,8 +92,10 @@ export class MaterialModule {
         VehicleRegistryComponent,
         AboutComponent,
         VacanciesComponent,
+        CareerComponent,
         GovernmentComponent,
-        BusinessComponent
+        BusinessComponent,
+        AppearingTextComponent
     ],
     imports: [
         BrowserModule,
@@ -108,7 +113,7 @@ export class MaterialModule {
             }
         }),
         SwiperModule,
-
+        NgxPageScrollModule,
         // VgCoreModule,
         // VgControlsModule,
         // VgOverlayPlayModule,
