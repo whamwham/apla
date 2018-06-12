@@ -9,6 +9,7 @@ import { SupplyChainComponent } 	from './cases/supply-chain/supply-chain.compone
 import { VehicleRegistryComponent } from './cases/vehicle-registry/vehicle-registry.component';
 import { GovernmentComponent } 		from './government/government.component';
 import { BusinessComponent } 		from './business/business.component';
+import { CareerComponent } 		from './career/career.component';
 
 const routes: Routes = [
     { path: 'government', component: GovernmentComponent },
@@ -23,7 +24,7 @@ const routes: Routes = [
 			{ path: 'vehicle-registry', component: VehicleRegistryComponent }
 		]
 	},
-
+    { path: 'career', component: CareerComponent },
 	// otherwise redirect to home
 	{ path: '**', redirectTo: '' }
 ];

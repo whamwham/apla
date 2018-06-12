@@ -1,0 +1,137 @@
+<section>
+    <section class="screen-main">
+        <div class="video"
+             style="width: 100%; height: 100%;z-index: 0;"
+             data-vide-bg="/assets/video/Mystic-Landscapes"
+             data-vide-options="loop: true, muted: false, position: 0% 0%">
+        </div>
+        <div class="container">
+            <div>
+                <h1>Imagine</h1>
+                <h2>
+                    <app-appearing-text [lines]="lines" (onHide)="changeText()"
+                                        *ngIf="firstText"></app-appearing-text>
+                    <app-appearing-text [lines]="lines2" (onHide)="changeText()"
+                                        *ngIf="!firstText"></app-appearing-text>
+                </h2>
+            </div>
+            <a pageScroll href="#screenItHappen"><span class="arrow arrow-down arrow-lg as-hovering"><em></em></span></a>
+        </div>
+    </section>
+    <section class="screen-it-happen" id="screenItHappen">
+        <div class="container">
+            <h3>
+                Imagine it is you who made it happen
+            </h3>
+            <h3>
+                And you will. In Apla
+            </h3>
+            <a pageScroll href="#screenWhyHere">Why here?</a>
+        </div>
+    </section>
+    <section class="screen-why-here" id="screenWhyHere">
+        <div class="reason container-additional">
+            <h2>
+                Yes.&thinsp;We change the world <br>with the blockchain
+            </h2>
+            <div class="container">
+                <img src="/assets/images/career/1.png">
+            </div>
+            <div class="annotations">
+                <p>
+                    Blockchain allows us to bring justice - cut <br>the gap between the rich and the poor, flight
+                    <br>corruption, conduct a fair election, simplify,<br>businnes and life proccesses.
+                </p>
+            </div>
+        </div>
+        <div class="reason container-additional">
+            <h2>
+                Apla team is almost <br>100 like-minded individuals
+            </h2>
+            <div class="container">
+                <img src="/assets/images/career/1.png">
+            </div>
+            <div class="annotations">
+                <p>
+                    We have team members in Luxembourg, Dubai<br>and Moscow.
+                </p>
+                <p>
+                    We belong to all kinds, faith, sex, <br>skin, colour, age and we put good music here.
+                    <br>All kinds of music.
+                </p>
+            </div>
+        </div>
+        <div class="reason container-additional">
+            <h2>
+                We make governments <br>and businesses safe,<br>fast, effective
+            </h2>
+            <div class="container">
+                <img src="/assets/images/career/1.png">
+            </div>
+            <div class="annotations">
+                <p>
+                    To reach that we help our clients switch <br>to blockchain. We hold workshops, we <br>do
+                    development, we teach and supervice <br>or clients.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="screen-joining">
+        <div class="container-additional">
+            <h1>
+                By joining us <span>you will</span>
+            </h1>
+            <div class="receive-list">
+                <div class="item">
+                    <span class="btn-icon btn-icon-lg btn-icon-green btn-tick-green disabled"><em></em></span>
+                    <h4 class="annotaion">
+                        Get ahead and reach your goals
+                    </h4>
+                </div>
+                <div class="item">
+                    <span class="btn-icon btn-icon-lg btn-icon-green btn-tick-green disabled"><em></em></span>
+                    <h4 class="annotaion">
+                        Gain authority and speak at global businnes conferences
+                    </h4>
+                </div>
+                <div class="item">
+                    <span class="btn-icon btn-icon-lg btn-icon-green btn-tick-green disabled"><em></em></span>
+                    <h4 class="annotaion">
+                        Win recognition and appear in Forbes and Techcrunch
+                    </h4>
+                </div>
+                <div class="item">
+                    <span class="btn-icon btn-icon-lg btn-icon-green btn-tick-green disabled"><em></em></span>
+                    <h4 class="annotaion">
+                        Be proud to tell your kids you have made this world better
+                    </h4>
+                </div>
+            </div>
+            <div class="screen-vacancies screen-vacancies-lg">
+                <div class="container-additional">
+                    <mat-tab-group *ngIf="vacancies">
+                        <mat-tab label="{{ town.TOWN }}" *ngFor="let town of vacancies">
+                            <section>
+                                <article *ngFor="let item of town.VACANCY">
+                                    <small>
+                                        <span>{{ item.DEPARTMENT }}</span>
+                                        <span>{{ town.TOWN }}, {{ town.COUNTRY }}</span>
+                                    </small>
+                                    <div class="content">
+                                        <h4>{{ item.TITLE }}</h4>
+                                        <p [innerHTML]="item.PREAMBLE"></p>
+                                    </div>
+                                    <button type="button"
+                                            class="btn btn-more btn-more-lg"
+                                            (click)="openDialog(item)">
+                                        ABOUT VACANCY
+                                        <em></em></button>
+                                </article>
+                            </section>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
