@@ -235,4 +235,12 @@
 			@include transition("opacity", 0s, "ease");
 		}
 	}
+	&.as-hovering {
+		&:before {
+			opacity: 1;
+		}
+		em {
+			opacity: 0;
+		}
+	}
 }

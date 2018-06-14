@@ -67,6 +67,8 @@ export class HeaderComponent implements OnInit {
                 this.navIsWhite = true;
             } else if (location.path() === '/business') {
                 this.navIsWhite = true;
+            } else if (location.path() === '/career') {
+                this.navIsWhite = true;
             } else {
                 this.navIsWhite = false;
             }

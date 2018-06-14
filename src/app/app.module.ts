@@ -8,8 +8,8 @@ import {MatMenuModule, MatTabsModule, MatDialogModule, MatIconModule} from '@ang
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {SwiperModule, SWIPER_CONFIG, SwiperConfigInterface} from 'ngx-swiper-wrapper';
-
 import {AgmCoreModule} from '@agm/core';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -32,6 +32,7 @@ import {SupplyChainComponent} from './cases/supply-chain/supply-chain.component'
 import {VehicleRegistryComponent} from './cases/vehicle-registry/vehicle-registry.component';
 import {AboutComponent} from './about/about.component';
 import {VacanciesComponent} from './vacancies/vacancies.component';
+import {CareerComponent} from './career/career.component';
 import {GovernmentComponent} from './government/government.component';
 import {BusinessComponent} from './business/business.component';
 
@@ -47,6 +48,7 @@ import { MusicCopyrightComponent } from './cases/music-copyright/music-copyright
 import { SurveyPollComponent } from './cases/survey-poll/survey-poll.component';
 import { FinancialSectorComponent } from './cases/financial-sector/financial-sector.component';
 import { BusinessLicensingComponent } from './cases/business-licensing/business-licensing.component';
+import {AppearingTextComponent} from './appearing-text/appearing-text.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -102,8 +104,10 @@ export class MaterialModule {
         BusinessLicensingComponent,
         AboutComponent,
         VacanciesComponent,
+        CareerComponent,
         GovernmentComponent,
-        BusinessComponent
+        BusinessComponent,
+        AppearingTextComponent
     ],
     imports: [
         BrowserModule,
@@ -126,6 +130,11 @@ export class MaterialModule {
         VgControlsModule,
         VgOverlayPlayModule,
         VgBufferingModule,
+        NgxPageScrollModule,
+        // VgCoreModule,
+        // VgControlsModule,
+        // VgOverlayPlayModule,
+        // VgBufferingModule,
 
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSoSxKFr6M-iL3RUm-PtHmA2zZTesjNKo'
