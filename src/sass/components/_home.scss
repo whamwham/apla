@@ -39,6 +39,8 @@
 		}
 		&-clients {
 			padding-top: 0px;
+            position: relative;
+            z-index: 2;
 			h2 {
 				margin-bottom: 60px;
 				@include max($btablet) {
@@ -48,8 +50,9 @@
 		}
 		&-4 {
 			background-color: $black;
-			padding-top: 90px;
+			padding-top: 190px;
 			padding-bottom: 90px;
+			//min-height: 160vh;
 			@include max($btablet) {
 				padding-top: 60px;
 				padding-bottom: 60px;
@@ -77,7 +80,7 @@
 				display: flex;
 				flex-flow: row nowrap;
 				justify-content: center;
-				margin-top: 130px;
+				margin-top: 60px;
 				@include max($btablet) {
 					display: block;
 					margin-top: 0px;
@@ -104,11 +107,208 @@
 				span {
 					width: 420px;
 					height: 550px;
-					background-image: url(/assets/images/apla.svg);
-					background-repeat: no-repeat;
-					background-position: center center;
+					display: block;
+					position: relative;
+					//background-image: url(/assets/images/apla.svg);
+					//background-repeat: no-repeat;
+					//background-position: center center;
 					@include max($btablet) {
 						display: none;
+					}
+
+					img {
+						max-width:90%;
+						opacity:0;
+						position: absolute;
+						top:50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						transition: ease-in-out 0.9s;
+						&.step-0 { width:15%; opacity: 1;}
+						&.step-1 { width:33%;}
+						&.step-2 { width:43%;}
+						&.step-3 { width:53%;}
+						&.step-4 { width:63%;}
+						&.step-5 { width:73%;}
+						&.step-6 { width:83%;}
+					}
+				}
+			}
+
+			@media (min-width:1000px) {
+				@media (max-height:950px) {
+					.sheme span {
+						height: 400px;
+					}
+				}
+
+				@media (max-height:900px) {
+					h2 {
+						font-size: 40px;
+						margin-bottom: 20px;
+					}
+					h4 {
+						font-size: 30px;
+						margin-bottom: 0;
+					}
+					p {
+						font-size: 18px;
+						line-height: 1.2em;
+						min-height: auto;
+					}
+					.sheme span {
+						width:350px;
+						height: 400px;
+					}
+				}
+
+				@media (max-height:850px) {
+					h2 {
+						font-size: 40px;
+						margin-bottom: 20px;
+					}
+					h4 {
+						font-size: 30px;
+						margin-bottom: 0;
+					}
+					p {
+						font-size: 18px;
+						line-height: 1.2em;
+						min-height: auto;
+					}
+					.sheme span {
+						width:350px;
+						height: 350px;
+					}
+				}
+				@media (max-height:800px) {
+					h2 {
+						font-size: 40px;
+						margin-bottom: 10px;
+					}
+					h4 {
+						font-size: 30px;
+						margin-bottom: 0;
+					}
+					p {
+						font-size: 18px;
+						line-height: 1.2em;
+						min-height: auto;
+					}
+					.sheme span {
+						width:350px;
+						height: 300px;
+					}
+				}
+
+				@media (max-height:600px) {
+					h2 {
+						font-size: 30px;
+						margin-bottom: 0px;
+					}
+					h4 {
+						font-size: 20px;
+						margin-bottom: 0;
+					}
+					p {
+						font-size: 14px;
+						line-height: 1.2em;
+						min-height: auto;
+					}
+					.sheme {
+						margin-top:30px;
+						span {
+							width: 300px;
+							height: 200px;
+							background-size: 90% auto;
+						}
+					}
+				}
+			}
+
+			&.animation-started{
+				height:170vh;
+				.container {
+					position: fixed;
+					top: 100px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+			&.animation-stopped{
+				height:100vh;
+				position: relative;
+				.container {
+					position: absolute;
+					top: auto;
+					bottom: 100px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+			article.step {
+				opacity: 0;
+				transition: ease-in-out 0.7s;
+			}
+			#container4.step-1 {
+				article.step-1 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1 {
+						opacity: 1;
+					}
+				}
+			}
+			#container4.step-2 {
+				article.step-1, article.step-2 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1, img.step-2 {
+						opacity: 1;
+					}
+				}
+			}
+			#container4.step-3 {
+				article.step-1, article.step-2, article.step-3 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1, img.step-2, img.step-3 {
+						opacity: 1;
+					}
+				}
+			}
+			#container4.step-4 {
+				article.step-1, article.step-2, article.step-3, article.step-4 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1, img.step-2, img.step-3, img.step-4 {
+						opacity: 1;
+					}
+				}
+			}
+			#container4.step-5 {
+				article.step-1, article.step-2, article.step-3, article.step-4, article.step-5 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1, img.step-2, img.step-3, img.step-4, img.step-5 {
+						opacity: 1;
+					}
+				}
+			}
+			#container4.step-6 {
+				article.step-1, article.step-2, article.step-3, article.step-4, article.step-5, article.step-6 {
+					opacity: 1;
+				}
+				.sheme span {
+					img.step-1, img.step-2, img.step-3, img.step-4, img.step-5, img.step-6 {
+						opacity: 1;
 					}
 				}
 			}

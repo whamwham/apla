@@ -37,12 +37,19 @@ export class HomeComponent implements OnInit {
         pagination: true
     };
 
-    anim6 = {
-        container: 'screen4',
-        object: 'container4',
+    anim = {
+        currPos: 0,
+        currDir: 0, // 0 - ahead, 1 - back
+        currStep: 0,
         isBefore: false,
-        isAfter: false
-    }
+        isAfter: false,
+        alreadyRun: false,
+        container: 'screen4',
+        containerRef: null,
+        object: 'container4',
+        objRef: null,
+        started: false
+    };
 
     @ViewChild(SwiperDirective) directiveRef: SwiperDirective;
 
@@ -58,9 +65,65 @@ export class HomeComponent implements OnInit {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        const number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
-        if (number > 100) {
+        const pos = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+        if (!this.anim.objRef) {
+            this.anim.objRef = this.document.getElementById(this.anim.object);
         }
+        if (!this.anim.containerRef) {
+            this.anim.containerRef = this.document.getElementById(this.anim.container);
+        }
+
+        this.anim.currDir = (this.anim.currPos > pos) ? 0 : 1;
+        this.anim.isBefore = ((this.anim.containerRef.offsetTop - this.window.innerHeight) > pos);
+        this.anim.isAfter = ((this.anim.containerRef.offsetTop + this.anim.containerRef.clientHeight) < pos);
+        const inSide = (!this.anim.isAfter && !this.anim.isBefore);
+
+        const objCenter = this.anim.objRef.offsetTop + this.anim.objRef.clientHeight / 2 - this.window.innerHeight / 2;
+
+        if (this.anim.started) {
+            if (this.anim.isBefore || this.anim.isAfter) {
+                this.anim.started = false;
+                this.anim.containerRef.classList.remove('animation-started');
+                this.anim.containerRef.classList.remove('animation-stopped');
+                console.log('STOPPED');
+            } else {
+                const stepDist = Math.floor(( (pos - this.anim.containerRef.offsetTop) * 10 / this.window.innerHeight)  );
+                console.log(stepDist);
+                if (stepDist >= 0) {
+                    if (stepDist < 7) {
+                        this.anim.objRef.classList.remove('step-' + this.anim.currStep);
+                        this.anim.objRef.classList.add('step-' + stepDist);
+                        this.anim.currStep = stepDist;
+                    }
+                    if (stepDist > 7) {
+                        this.anim.containerRef.classList.add('animation-stopped');
+                        this.window.scrollBy(0, -this.window.innerHeight * .7);
+                        this.anim.containerRef.classList.remove('animation-started');
+                        this.anim.started = false;
+                    }
+                }
+            }
+        } else {
+            if (objCenter > pos - 50 && objCenter < pos + 50 && this.anim.currDir) {
+                this.anim.started = true;
+                this.anim.alreadyRun = true;
+                this.anim.containerRef.classList.add('animation-started');
+                this.anim.containerRef.classList.remove('animation-stopped');
+                this.anim.objRef.classList.remove('step-6');
+                console.log('STARTED');
+            }
+            else {
+                if(this.anim.isAfter && !this.anim.currDir && !this.anim.alreadyRun ) {
+                    this.anim.objRef.classList.add('step-6');
+                }
+                if(this.anim.isBefore && this.anim.currDir && !this.anim.alreadyRun ) {
+                    this.anim.objRef.classList.remove('step-6');
+                }
+            }
+        }
+
+        this.anim.currPos = pos;
+//        console.log(this.anim.isBefore, this.anim.isAfter, inSide);
     }
 
 

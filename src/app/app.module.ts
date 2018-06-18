@@ -67,13 +67,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         MatDialogModule,
         MatIconModule
     ],
-//    declarations: [BusinessLicensingComponent],
-//    declarations: [FinancialSectorComponent],
-//    declarations: [SurveyPollComponent],
-//    declarations: [MusicCopyrightComponent],
-//    declarations: [VideoComponent],
-//    declarations: [TeamComponent],
-//    declarations: [BannerComponent]
 })
 export class MaterialModule {
 }
@@ -131,10 +124,6 @@ export class MaterialModule {
         VgOverlayPlayModule,
         VgBufferingModule,
         NgxPageScrollModule,
-        // VgCoreModule,
-        // VgControlsModule,
-        // VgOverlayPlayModule,
-        // VgBufferingModule,
 
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSoSxKFr6M-iL3RUm-PtHmA2zZTesjNKo'

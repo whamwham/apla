@@ -10,7 +10,7 @@
 <div class="screen-6">
 	<div class="container">
 		<h2 [innerHTML]="'MAIN.ADVANTAGE.TITLE' | translate"></h2>
-		<div class="img"><img src="/assets/images/devices2.png" alt=""/></div>
+		<div class="img"><img src="/assets/images/devices-3.png" alt=""/></div>
 		<section>
 			<div class="item">
 				<img class="icon" src="/assets/icons/icon-lock.svg">
@@ -106,6 +106,9 @@
 				<a href="http://finessedirect.com/" target="_blank">
 					<img src="/assets/images/clients/Finesse-LOGO-H-with-add1.png" alt=""/>
 				</a>
+				<a href="http://www.gazprom.com/" target="_blank" style="max-width:38%;margin-top: 20px;">
+					<img src="/assets/images/clients/Gazprom.jpg" alt=""/>
+				</a>
 			</div>
 		</section>
 	</div>
@@ -116,30 +119,38 @@
 		<p>{{ 'MAIN.FULLSERVICE.TEXT' | translate }}</p>
 		<div class="sheme">
 			<div>
-				<article>
+				<article class="step step-1">
 					<h4>{{ 'MAIN.FULLSERVICE.1.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.1.TEXT' | translate }}</p>
 				</article>
-				<article>
+				<article class="step step-2">
 					<h4>{{ 'MAIN.FULLSERVICE.2.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.2.TEXT' | translate }}</p>
 				</article>
-				<article>
+				<article class="step step-3">
 					<h4>{{ 'MAIN.FULLSERVICE.3.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.3.TEXT' | translate }}</p>
 				</article>
 			</div>
-			<span></span>
+			<span>
+				<img class="step-0" src="/assets/apla.svg">
+				<img class="step-1" src="/assets/images/b-w.svg">
+				<img class="step-2" src="/assets/images/b-w.svg">
+				<img class="step-3" src="/assets/images/b-w.svg">
+				<img class="step-4" src="/assets/images/b-w.svg">
+				<img class="step-5" src="/assets/images/b-w.svg">
+				<img class="step-6" src="/assets/images/b-w.svg">
+			</span>
 			<div>
-				<article>
+				<article class="step step-4">
 					<h4>{{ 'MAIN.FULLSERVICE.4.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.4.TEXT' | translate }}</p>
 				</article>
-				<article>
+				<article class="step step-5">
 					<h4>{{ 'MAIN.FULLSERVICE.5.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.5.TEXT' | translate }}</p>
 				</article>
-				<article>
+				<article class="step step-6">
 					<h4>{{ 'MAIN.FULLSERVICE.6.TITLE' | translate }}</h4>
 					<p>{{ 'MAIN.FULLSERVICE.6.TEXT' | translate }}</p>
 				</article>
@@ -181,6 +192,10 @@
 			<span class="btn">read the case</span>
 			<img src="/assets/images/cases/supply-chain-b.jpg" alt=""/>
 		</a>
+		<div class="btn-wrapper">
+			<a routerLink="/cases" class="btn">{{ 'READMORECASES' | translate }}</a>
+		</div>
+
 	</div>
 </div>
 <div class="screen-8">

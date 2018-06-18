@@ -56,7 +56,7 @@
     <g
        data-name="Layer 2"
        id="Layer_2-11-8"
-       transform="matrix(-0.06886331,0,0,0.07359829,40.884512,55.15638)"
+       transform="matrix(-0.06536322,0,0,0.06604014,39.478926,58.000362)"
        style="fill:none;stroke:#ffffff;stroke-width:11.1495142;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
       <g
          data-name="Layer 1"
@@ -67,7 +67,7 @@
            d="m 766.7,478 a 203.49,203.49 0 0 0 0,-203.49 L 672.26,111 A 203.49,203.49 0 0 0 496,9.21 H 307.14 A 203.49,203.49 0 0 0 130.92,111 L 36.47,274.54 a 203.49,203.49 0 0 0 0,203.49 L 130.92,641.6 A 203.49,203.49 0 0 0 307.14,743.35 H 496 A 203.49,203.49 0 0 0 672.26,641.6 Z"
            class="cls-1"
            inkscape:connector-curvature="0"
-           style="vector-effect:none;fill:none;stroke:#ffffff;stroke-width:11.1495142;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="vector-effect:non-scaling-stroke;fill:none;stroke:#ffffff;stroke-width:3.7;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
     </g>
   </g>
