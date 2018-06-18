@@ -86,6 +86,8 @@ export class HeaderComponent implements OnInit {
     @HostListener('window:scroll', [])
     onWindowScroll() {
         const number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
+        // Cheap shit to hack navbar switch on matdialog open
+        if (this.document.documentElement.classList.contains('cdk-global-scrollblock')) { return; }
         if (number > 100) {
             this.navIsFixed = true;
         } else {
