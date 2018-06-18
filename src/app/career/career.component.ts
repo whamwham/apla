@@ -28,11 +28,11 @@ export class CareerComponent implements OnInit {
         }];
     lines2 = [
         {
-            text: 'Задача организации'
+            text: 'Had strictly mrs handsome'
         }, {
-            text: 'требуют определения'
+            text: 'mistaken cheerful.'
         }, {
-            text: 'развитие различных'
+            text: 'We it so if resolution'
         }];
 
     constructor(public dialog: MatDialog, private translate: TranslateService, @Inject(DOCUMENT) private document: Document, @Inject(WINDOW) private window: Window) {

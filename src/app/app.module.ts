@@ -35,6 +35,7 @@ import {VacanciesComponent} from './vacancies/vacancies.component';
 import {CareerComponent} from './career/career.component';
 import {GovernmentComponent} from './government/government.component';
 import {BusinessComponent} from './business/business.component';
+import {AppearingBlockComponent} from './appearing-block/appearing-block.component';
 
 import {LocalSettingsService} from './_services/localsettings.service';
 import {WINDOW_PROVIDERS} from './_services/window.service';
@@ -100,7 +101,8 @@ export class MaterialModule {
         CareerComponent,
         GovernmentComponent,
         BusinessComponent,
-        AppearingTextComponent
+        AppearingTextComponent,
+        AppearingBlockComponent
     ],
     imports: [
         BrowserModule,
@@ -137,7 +139,8 @@ export class MaterialModule {
         {
             provide: SWIPER_CONFIG,
             useValue: DEFAULT_SWIPER_CONFIG
-        }
+        },
+        {provide: 'Window', useValue: window}
     ],
     bootstrap: [
         AppComponent

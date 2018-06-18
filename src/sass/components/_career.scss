@@ -1,26 +1,12 @@
 &career {
-	.container-additional {
-		max-width: 1710px;
-		margin: 0 auto;
-		@include max($btablet) {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-	}
 	& > * {
 		.screen {
 			&-main {
-				height: 100vh;
-				display: flex;
+				min-height: 100vh;
 				position: relative;
-				padding-top: 180px;
+				padding: 0;
 				@include max($btablet) {
 					background-image: url('/assets/images/career/poster.png');
-					min-height: 450px;
-				}
-				@include min($bdesktop) {
-					padding: 0;
-					min-height: 650px;
 				}
 				.video {
 					position: absolute;
@@ -36,176 +22,124 @@
 				& > .container {
 					display: flex;
 					flex-direction: column;
-					justify-content: space-between;
-					@include min($bdesktop) {
-						padding: 169px 0 20px 43px;
-					}
+					justify-content: flex-start;
 					z-index: 1;
+					position: relative;
+					height: 100%;
+					margin: 0 auto;
+					@include min($bdesktop) {
+						padding: 0 0 150px 42px;
+						width: 62%;
+					}
 					& > div {
+						margin-top: 110px;
 						@include min($bdesktop) {
-							height: 400px;
+							margin-top: 218px;
+							height: 270px;
 						}
-						h1 {
+						h5 {
 							color: $white;
 							text-transform: uppercase;
-							margin-bottom: -5px;
-							@include min($bdesktop) {
-								font-size: 33px;
-							}
 						}
-						h2 {
+						h1 {
+							margin: 30px 0;
+							@include min($bdesktop) {
+								margin: 20px 0 22px -4px;
+							}
 							app-appearing-text {
 								div {
 									@include max($bdesktop) {
-										height: 90px;
+										height: 41px;
 									}
-									@include max($btablet) {
-										height: 47px;
+									p {
+										color: $white;
+										line-height: 1.05em;
+										@include max($bdesktop) {
+											font-size: 29px;
+										}
 									}
-								}
-							}
-							p {
-								padding: 5px 0;
-								color: $white;
-								line-height: 1.05em;
-								@include min($bdesktop) {
-									font-size: 95px;
-								}
-								@include max($btablet) {
-									font-size: 26px;
 								}
 							}
 						}
 					}
 					.arrow {
-						margin-left: -3px;
+						@include min($bdesktop) {
+							margin: 124px 0 0 -3px;
+						}
 					}
 				}
 			}
 			&-it-happen {
-				padding: 180px 0 270px;
-				@include max($btablet) {
-					padding: 60px 0 60px;
-					margin-top: 60px;
-				}
+				padding: 60px 0;
 				@include min($bdesktop) {
-					padding: 280px 0 693px;
+					padding: 210px 0;
 				}
-				* > {
-					* {
-						line-height: 1.05em;
-						@include min($bdesktop) {
-							font-size: 97px;
+				& .container {
+					@include min($bdesktop) {
+						width: 62%;
+					}
+					&:first-child {
+						app-appearing-block {
+							&:first-child {
+								h1 {
+									margin-bottom: 63px;
+									@include min($bdesktop) {
+										margin-bottom: 418px;
+									}
+								}
+
+							}
 						}
 					}
-					h3 {
-						margin-bottom: 180px;
-						@include max($btablet) {
-							margin-bottom: 60px;
-						}
-						@include min($bdesktop) {
-							margin-bottom: 560px;
-						}
-						&:last-of-type {
-							margin-bottom: 0;
-						}
-					}
+
 					a {
 						color: $green;
 						text-decoration: underline;
-						@include font-family(bold);
-						@include max($desktop) {
-							font-size: 30px;
-						}
-						@include min($btablet) {
-							font-size: 48px;
-						}
-						@include min($bdesktop) {
-							font-size: 97px;
-						}
 					}
 				}
 			}
 			&-why-here {
-				& > .reason {
-					padding: 0px 20px 60px 20px;
-					margin-top: 60px;
-					position: relative;
+				margin-top: 46px;
+				@include min($bdesktop) {
+					margin-top: 305px;
+					padding-bottom: 80px;
+				}
+				& .container {
+					@include max($bdesktop) {
+						margin: 60px 0 !important;
+					}
 					@include min($bdesktop) {
-						padding: 133px 0;
-					}
-					&:first-child {
-						@include max($bdesktop) {
-							padding-bottom: 240px;
-						}
-						padding-bottom: 340px;
-						@include max($btablet) {
-							padding-bottom: 0;
-						}
-					}
-					&:nth-child(2) {
-						padding-bottom: 175px;
-						@include max($btablet) {
-							padding-bottom: 0;
-						}
-						.annotations {
-							margin-right: 166px;
-							@include max($btablet) {
-								margin: 0;
-							}
-						}
-					}
-					&:last-child {
-						padding-bottom: 240px;
-						@include max($btablet) {
-							padding-bottom: 60px;
-						}
-						.annotations {
-							margin: 75px 225px 0 0;
-							@include max($btablet) {
-								margin: 0;
-							}
-						}
-					}
-					.container {
-						@include max($btablet) {
-							padding: 0;
-							img {
-								height: auto;
-								width: 100%;
-							}
-						}
+						position: relative;
+						padding: 98px 40px;
+						text-align: right;
 					}
 					h2 {
 						@include min($bdesktop) {
-							font-size: 76px;
-							line-height: 1.1em;
 							position: absolute;
 							top: 0;
+							margin-left: -5px;
+							text-align: left;
 						}
 					}
 					img {
 						max-width: 100%;
-						height: 544px;
+						margin: 30px auto;
+						display: block;
+						@include min($bdesktop) {
+							margin: 0 auto;
+						}
 					}
 					.annotations {
-						margin: 53px 180px 0 0;
-						display: flex;
-						flex-direction: column;
-						align-items: flex-end;
-						@include max($btablet) {
-							margin: 0;
+						@include max($bdesktop) {
+							margin: 0 !important;
 						}
-						p {
-							color: $gray;
-							& + p {
-								margin-top: 38px;
-								@include max($btablet) {
-									margin-top: 28px;
-								}
-							}
-							@include min($bdesktop) {
-								font-size: 27px;
+						@include min($bdesktop) {
+							margin: 47px 5px 0 0;
+							text-align: right;
+							width: 40%;
+							display: inline-block;
+							p {
+								text-align: left;
 								line-height: 1.5em;
 							}
 						}
@@ -214,99 +148,61 @@
 			}
 			&-joining {
 				background: $black;
-				padding: 150px 0 45px 0;
-				@include max($btablet) {
-					padding: 60px 0 45px 0;
-				}
-				& > .container-additional {
-					padding: 0 110px 0 10px;
-					@include max($bdesktop) {
-						padding-left: 20px;
-						padding-right: 20px;
-					}
+				padding: 60px 0;
+				@include min($bdesktop) {
+					padding: 100px 0 45px 0;
 				}
 				& > * {
 					h1 {
 						color: $white;
-						@include min($bdesktop) {
-							font-size: 96px;
-						}
 						span {
 							color: $green;
 						}
 					}
 					.receive-list {
 						display: flex;
-						margin-top: 120px;
+						margin-top: 30px;
+						@include min($btablet) {
+							margin-top: 80px;
+						}
 						@include max($btablet) {
-							margin-top: 60px;
 							flex-direction: column;
 						}
 						& .item {
-							width: 25%;
-							@include max($btablet) {
-								width: 100%;
-								margin-bottom: 30px;
-								&:last-child {
-									margin-bottom: 0;
-								}
+							width: 100%;
+							margin-bottom: 30px;
+							&:last-child {
+								margin-bottom: 0;
 							}
-							& .btn-icon {
-								margin-left: -5px;
+							@include min($btablet) {
+								width: 25%;
 							}
 							& .annotaion {
 								color: $white;
-								padding: 25px 50px 0 0;
-								line-height: 1.2em;
-								@include font-family(bold);
-								@include min($btablet) {
-									font-size: 31px;
-								}
+								padding: 8px 30px 0 0;
 							}
 						}
 					}
 				}
 			}
 			&-vacancies {
-				margin: 200px 25px 0 0;
-				@include max($btablet) {
-					margin: 60px 0 0 0;
-					padding-bottom: 0;
-					.container-additional {
-						padding: 0;
-					}
+				margin-top: 60px;
+				padding-bottom: 0;
+				@include min($btablet) {
+					margin: 123px 2px 0 0;
 				}
-				.mat-tab-label {
-					@include min($bdesktop) {
-						height: 55px !important;
-						&-content {
-							font-size: 35px;
-						}
+				mat-tab-header {
+					@include min($btablet) {
+						margin-bottom: 2px !important;
 					}
 				}
 				section {
-					article {
-						height: auto;
-						@include min($bdesktop) {
-							padding: 48px 59px 57px 52px;
-							min-height: 520px;
-							small {
-								font-size: 22px;
-							}
+					@include min($btablet) {
+						article {
+							height: auto;
 							.content {
 								margin: 0 auto;
 								width: 67%;
-								h4 {
-									margin-top: 65px;
-									font-size: 44px;
-									white-space: nowrap;
-								}
-								p {
-									font-size: 29px;
-									margin: 0;
-									padding: 12px 0 45px 0;
-									line-height: 1.4em;
-								}
 							}
 						}
 					}
