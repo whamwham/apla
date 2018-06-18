@@ -2,6 +2,10 @@
 	.vg-icon-play_arrow {
 		background: #1C1A1A url(/assets/icons/icon-wv.svg) center center no-repeat;
 		background-size: 150px auto;
+		@include max($bmobile) {
+			background: #1C1A1A url(/assets/icons/icon-wv.svg) center 40% no-repeat;
+			background-size: 100px auto;
+		}
 		&:before {
 			content: "";
 		}
