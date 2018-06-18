@@ -6,7 +6,7 @@ interface lineParameter {
     state?: String
 }
 
-const heightDiv = '110px',
+const heightDiv = '80px',
     offset = '10px',
     animTime = 300;
 
