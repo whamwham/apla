@@ -2093,13 +2093,14 @@
 }
 
 .video-section {
-  min-height: 550px;
+  min-height: 150px;
   background: $black;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  //padding-top: 75px;
+  //padding-bottom: 75px;
+  width: 100%;
 
   & .video-wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 
     img, video {
