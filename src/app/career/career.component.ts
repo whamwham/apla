@@ -17,23 +17,13 @@ import 'vide/dist/jquery.vide.js';
 })
 export class CareerComponent implements OnInit {
     vacancies: Array<number>;
-    firstText = true;
-    lines = [
-        {
-            text: 'A high-speed online'
-        }, {
-            text: 'healtcare system'
-        }, {
-            text: 'that saves lives'
-        }];
-    lines2 = [
-        {
-            text: 'Had strictly mrs handsome'
-        }, {
-            text: 'mistaken cheerful.'
-        }, {
-            text: 'We it so if resolution'
-        }];
+    activeIndexText = 0;
+    collectionText = [
+        ['THE END', 'OF BUREAUCRACY'],
+        ['AN ELECTION', 'THAT CANNOT', 'BE FAKED'],
+        ['A DIGITAL GOVERNMENT', 'SOLVING YOUR QUESTION', 'STRAIGHT AWAY'],
+        ['A HIGH-SPEED ONLINE', 'HEALTHCARE SYSTEM', 'THAT SAVES LIVES']
+    ];
 
     constructor(public dialog: MatDialog, private translate: TranslateService, @Inject(DOCUMENT) private document: Document, @Inject(WINDOW) private window: Window) {
         translate.stream('VACANCIES').subscribe((response: any) => this.vacancies = response);
@@ -42,7 +32,11 @@ export class CareerComponent implements OnInit {
     }
 
     changeText() {
-        this.firstText = !this.firstText;
+        if (this.activeIndexText >= this.collectionText.length - 1) {
+            this.activeIndexText = 0;
+        } else {
+            this.activeIndexText++;
+        }
     }
 
     openDialog(data): void {
@@ -52,6 +46,6 @@ export class CareerComponent implements OnInit {
     }
 
     ngOnInit() {
-        $('#video').vide('/assets/video/Mystic-Landscapes');
+        $('#video').vide('/assets/video/career-video-480');
     }
 }
