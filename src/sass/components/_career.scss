@@ -31,6 +31,9 @@
 						padding: 0 0 150px 42px;
 						width: 62%;
 					}
+					@include max($bdesktop) {
+						padding-right: 0;
+					}
 					& > div {
 						margin-top: 110px;
 						@include min($bdesktop) {
@@ -47,6 +50,10 @@
 								margin: 20px 0 22px -4px;
 							}
 							app-appearing-text {
+								@include max($bdesktop) {
+									min-height: 105px;
+									display: block;
+								}
 								div {
 									@include max($bdesktop) {
 										height: 41px;
@@ -55,7 +62,7 @@
 										color: $white;
 										line-height: 1.05em;
 										@include max($bdesktop) {
-											font-size: 29px;
+											font-size: 24px;
 										}
 									}
 								}

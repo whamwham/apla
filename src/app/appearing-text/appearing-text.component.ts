@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {Component, OnChanges, Input, Output, EventEmitter} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 
 interface lineParameter {
@@ -33,7 +33,7 @@ const heightDiv = '80px',
         ])
     ],
     template: `
-        <div class="appearing" *ngFor="let line of lines">
+        <div class="appearing" *ngFor="let line of collection">
             <div [@appearing]="line.state">
                 <p>{{ line.text }}</p>
             </div>
@@ -41,34 +41,39 @@ const heightDiv = '80px',
     `
 })
 
-export class AppearingTextComponent implements OnInit {
+export class AppearingTextComponent implements OnChanges {
 
     @Input() lines: lineParameter[];
     @Output() onHide = new EventEmitter<any>();
     private _delay = 150;
     private _timeShow = 1000;
-    private _prevDelayHide = 0;
-    private _prevDelayShow = 0;
-
-    ngOnInit() {
-        this.lines.forEach(line => {
-            this._prevDelayHide = this._prevDelayHide + this._delay;
+    collection;
+    ngOnChanges() {
+        this.collection = this.lines.map(line => {
+            return {
+                text: line,
+                state: null
+            }
+        })
+        let _prevDelayHide = 0, _prevDelayShow = 0;
+        this.collection.forEach(line => {
+            _prevDelayHide = _prevDelayHide + this._delay;
             setTimeout(() => {
                 line.state = 'show';
-            }, this._prevDelayHide);
+            }, _prevDelayHide);
         });
         setTimeout(() => {
-            this.lines.slice().reverse().forEach((line, i) => {
-                this._prevDelayShow = this._prevDelayShow + this._delay;
+            this.collection.slice().reverse().forEach((line, i) => {
+                _prevDelayShow = _prevDelayShow + this._delay;
                 setTimeout(() => {
                     line.state = 'hide';
-                    if (i === this.lines.length - 1) {
+                    if (i === this.collection.length - 1) {
                         setTimeout(() => {
                             this.onHide.emit();
                         }, animTime);
                     }
-                }, this._prevDelayShow);
+                }, _prevDelayShow);
             });
-        }, this._prevDelayHide + animTime + this._timeShow);
+        }, _prevDelayHide + animTime + this._timeShow);
     }
 }
