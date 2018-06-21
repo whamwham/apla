@@ -759,6 +759,13 @@
           margin-top: 15px;
         }
       }
+
+      .gazprom {
+        max-width:21%;margin-top: 20px;
+        @include max($btablet) {
+          max-width:38%;margin-top: 20px;
+        }
+      }
     }
   }
   &-stories {
