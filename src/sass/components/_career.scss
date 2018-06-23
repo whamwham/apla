@@ -60,14 +60,11 @@
 							}
 							app-appearing-text {
 								@include max($bdesktop) {
-									min-height: 105px;
+									min-height: 125px;
 									display: block;
 								}
-								div {
-									@include max($bdesktop) {
-										height: 41px;
-									}
-									p {
+								.layer-one, .layer-second {
+									.layer-third {
 										color: $white;
 										line-height: 1.05em;
 										@include max($bdesktop) {
