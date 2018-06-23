@@ -1,53 +1,36 @@
 import {Component, OnChanges, Input, Output, EventEmitter} from '@angular/core';
-import {trigger, state, style, transition, animate} from '@angular/animations';
+
+import * as $ from 'jquery/dist/jquery.js';
 
 interface lineParameter {
     text: String,
     state?: String
 }
-
-const heightDiv = '80px',
-    offset = '10px',
-    animTime = 300;
-
+const animTime = 550;
 @Component({
     selector: 'app-appearing-text',
     styles: [
-        '.appearing { height: ' + heightDiv + '; margin-top: -' + offset + ';}',
-        '.appearing div { ttransform: translateY(-' + offset + '); opacity: 0;}',
-    ],
-    animations: [
-        trigger('appearing', [
-            state('show', style({
-                height: heightDiv,
-                transform: 'translateY(0)',
-                opacity: 1,
-                transition: animTime + 'ms all ease-in'
-            })),
-            state('hide', style({
-                height: 0,
-                opacity: 0,
-                transform: 'translateY(' + offset + ')',
-                transition: animTime + 'ms all ease-in'
-            }))
-        ])
+        ' * { transition: all ' + animTime + 'ms ease; }'
     ],
     template: `
-        <div class="appearing" *ngFor="let line of collection">
-            <div [@appearing]="line.state">
-                <p>{{ line.text }}</p>
+        <div *ngFor="let line of collection"
+             [ngClass]="line.state"
+             class="layer-one">
+            <div class="layer-second">
+                <div class="layer-third">{{ line.text }}</div>
             </div>
         </div>
     `
 })
 
-export class AppearingTextComponent implements OnChanges {
+export class AppearingTextComponent {
 
     @Input() lines: lineParameter[];
     @Output() onHide = new EventEmitter<any>();
-    private _delay = 150;
-    private _timeShow = 1000;
     collection;
+    private _delay = 100;
+    private _timeShow = 2000;
+
     ngOnChanges() {
         this.collection = this.lines.map(line => {
             return {
@@ -66,7 +49,7 @@ export class AppearingTextComponent implements OnChanges {
             this.collection.slice().reverse().forEach((line, i) => {
                 _prevDelayShow = _prevDelayShow + this._delay;
                 setTimeout(() => {
-                    line.state = 'hide';
+                    line.state = null;
                     if (i === this.collection.length - 1) {
                         setTimeout(() => {
                             this.onHide.emit();
